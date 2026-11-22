@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Presupuestos</title>
+<meta name="theme-color" content="#2f4a3a">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<style>
+:root{--fondo:#f4f2ee;--tarjeta:#fff;--texto:#1f2421;--mut:#6b706c;--linea:#e2ded6;--acento:#2f4a3a;--acento2:#4f7a5f;--rojo:#b23b2e;--ambar:#a86b00;--azul:#2c5d8a;--r:10px}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px;color:var(--texto);background:var(--fondo);-webkit-tap-highlight-color:transparent}
+button,input,select,textarea{font:inherit;color:inherit}
+header{position:sticky;top:0;z-index:20;background:var(--acento);color:#fff;display:flex;align-items:center;gap:8px;padding:10px 12px;padding-top:max(10px,env(safe-area-inset-top))}
+header h1{font-size:17px;margin:0;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+header button{background:none;border:0;color:#fff;font-size:20px;padding:4px 8px;cursor:pointer}
+#buscar{width:100%;padding:9px 12px;border-radius:8px;border:1px solid var(--linea);background:#fff}
+nav{position:fixed;bottom:0;left:0;right:0;z-index:20;display:flex;background:#fff;border-top:1px solid var(--linea);padding-bottom:env(safe-area-inset-bottom)}
+nav a{flex:1;text-align:center;padding:8px 2px 7px;color:var(--mut);text-decoration:none;font-size:12px}
+nav a b{display:block;font-size:19px;font-weight:400;line-height:1.2}
+nav a.on{color:var(--acento);font-weight:600}
+main{padding:12px 12px 90px;max-width:1300px;margin:0 auto}
+.dos{display:block}
+@media(min-width:900px){.dos{display:grid;grid-template-columns:380px 1fr;gap:14px;align-items:start}.dos>.izq{position:sticky;top:64px;max-height:calc(100vh - 140px);overflow:auto}}
+.card{background:var(--tarjeta);border:1px solid var(--linea);border-radius:var(--r);margin:0 0 10px}
+.pad{padding:12px}
+.fila{display:flex;align-items:center;gap:8px;padding:10px 12px;border-top:1px solid var(--linea);cursor:pointer}
+.fila:first-child{border-top:0}
+.fila .t{flex:1;min-width:0}
+.fila .t small{display:block;color:var(--mut);font-size:12px}
+.fila .v{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.fila.sel{background:#eef3ef}
+.mut{color:var(--mut)}.peq{font-size:12px}
+h2{font-size:15px;margin:16px 4px 8px;color:var(--acento)}
+details>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:11px 12px;font-weight:600}
+details>summary::-webkit-details-marker{display:none}
+details>summary:before{content:"▸";color:var(--mut);transition:.15s}
+details[open]>summary:before{transform:rotate(90deg)}
+details>summary .s{margin-left:auto;font-weight:600;font-variant-numeric:tabular-nums}
+.chip{display:inline-block;font-size:11px;padding:1px 7px;border-radius:20px;background:#eee;color:#555;margin-left:4px;font-weight:500;vertical-align:middle}
+.chip.est{background:#fff3d6;color:var(--ambar)}.chip.ok{background:#e3f0e6;color:var(--acento)}.chip.bl{background:#e4ecf5;color:var(--azul)}.chip.rojo{background:#fbe4e1;color:var(--rojo)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:0;border-radius:8px;padding:9px 14px;background:var(--acento);color:#fff;cursor:pointer;font-weight:600}
+.btn.sec{background:#e9e6df;color:var(--texto)}.btn.peli{background:var(--rojo)}.btn.mini{padding:5px 10px;font-size:13px}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.fab{position:fixed;right:16px;bottom:76px;z-index:21;width:54px;height:54px;border-radius:50%;border:0;background:var(--acento);color:#fff;font-size:28px;box-shadow:0 3px 10px #0003;cursor:pointer}
+label.c{display:block;margin:8px 0}label.c>span{display:block;font-size:12px;color:var(--mut);margin-bottom:3px}
+input.i,select.i,textarea.i{width:100%;padding:8px 10px;border:1px solid var(--linea);border-radius:8px;background:#fff}
+input.num{text-align:right;font-variant-numeric:tabular-nums}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:8px}.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.comp{border-top:1px solid var(--linea);padding:9px 12px}
+.comp .n{display:flex;gap:6px;align-items:baseline}
+.comp .n .t{flex:1;min-width:0}
+.comp .cn{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:6px;margin-top:6px;align-items:end}
+.comp .cn label{font-size:11px;color:var(--mut)}
+.comp .cn input{width:100%;padding:6px 7px;border:1px solid var(--linea);border-radius:6px;text-align:right}
+.x{background:none;border:0;color:var(--mut);font-size:18px;cursor:pointer;padding:0 4px}
+.tot{display:flex;justify-content:space-between;padding:6px 12px;font-variant-numeric:tabular-nums}
+.tot.g{font-size:17px;font-weight:700;border-top:2px solid var(--acento);padding-top:10px}
+.aviso{background:#fff3d6;color:#6b4700;border-radius:8px;padding:9px 12px;margin:8px 0;font-size:13px}
+.vacio{text-align:center;color:var(--mut);padding:30px 10px}
+#modal{position:fixed;inset:0;background:#0006;z-index:50;display:none;align-items:flex-end;justify-content:center}
+#modal.on{display:flex}
+#modal .box{background:#fff;width:100%;max-width:640px;max-height:88vh;overflow:auto;border-radius:14px 14px 0 0;padding:14px}
+@media(min-width:700px){#modal{align-items:center}#modal .box{border-radius:14px}}
+#toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:#222;color:#fff;padding:9px 16px;border-radius:20px;font-size:14px;z-index:60;display:none}
+.lista-sel .fila{cursor:pointer}
+table.imp{width:100%;border-collapse:collapse;font-size:12px}
+table.imp th,table.imp td{border-bottom:1px solid #ccc;padding:4px 5px;text-align:left;vertical-align:top}
+table.imp td.n,table.imp th.n{text-align:right;white-space:nowrap}
+table.imp tr.cap td{font-weight:700;background:#eee}
+#impresion{display:none}
+@media print{
+ body{background:#fff}header,nav,.fab,main,#toast,#modal{display:none!important}
+ #impresion{display:block;font-size:12px;color:#000}
+ @page{size:letter landscape;margin:12mm}
+ .salto{page-break-before:always}
+}
+#impresion h1{font-size:18px;margin:0 0 4px}#impresion h3{margin:14px 0 6px;font-size:14px}
+#impresion .enc{display:flex;justify-content:space-between;border-bottom:2px solid #2f4a3a;padding-bottom:6px;margin-bottom:10px}
+.tabla-tot{margin-left:auto;margin-top:10px;width:330px}
+.tabla-tot td{padding:3px 5px}.tabla-tot td.n{text-align:right}
+</style>
+</head>
+<body>
+<header><button id="atras" aria-label="Atrás" hidden>←</button><h1 id="titulo">Presupuestos</h1><button id="btnMenu" aria-label="Más">⋯</button></header>
+<main id="vista"></main>
+<nav>
+ <a href="#presupuestos" data-n="presupuestos"><b>▤</b>Presupuestos</a>
+ <a href="#biblioteca" data-n="biblioteca"><b>❖</b>APU</a>
+ <a href="#insumos" data-n="insumos"><b>◫</b>Insumos</a>
+ <a href="#mo" data-n="mo"><b>⚒</b>Mano de obra</a>
+ <a href="#ajustes" data-n="ajustes"><b>⚙</b>Ajustes</a>
+</nav>
+<button class="fab" id="fab" hidden>+</button>
+<div id="modal"><div class="box" id="modalBox"></div></div>
+<div id="toast"></div>
+<div id="impresion"></div>
+<script>
+'use strict';
+/* ================= Datos ================= */
+const DB_NAME='presupuestos-db';let D=null;const $=(s,e=document)=>e.querySelector(s),$$=(s,e=document)=>[...e.querySelectorAll(s)];
+function idb(){return new Promise((ok,mal)=>{const r=indexedDB.open(DB_NAME,1);r.onupgradeneeded=()=>{r.result.createObjectStore('kv')};r.onsuccess=()=>ok(r.result);r.onerror=()=>mal(r.error)})}
+async function kvGet(k){const db=await idb();return new Promise((ok,mal)=>{const t=db.transaction('kv').objectStore('kv').get(k);t.onsuccess=()=>ok(t.result);t.onerror=()=>mal(t.error)})}
+async function kvSet(k,v){const db=await idb();return new Promise((ok,mal)=>{const t=db.transaction('kv','readwrite');t.objectStore('kv').put(v,k);t.oncomplete=()=>ok();t.onerror=()=>mal(t.error)})}
+let tGuardar=null;
+function guardar(){D.mod=new Date().toISOString();clearTimeout(tGuardar);tGuardar=setTimeout(guardarYa,400)}
+async function guardarYa(){try{await kvSet('datos',D);const h=(await kvGet('historial'))||[];const ult=h[0];if(!ult||Date.now()-new Date(ult.fecha).getTime()>10*60000){h.unshift({fecha:new Date().toISOString(),datos:JSON.parse(JSON.stringify(D))});await kvSet('historial',h.slice(0,15))}}catch(e){toast('No se pudo guardar: '+e.message)}}
+const uid=p=>(p||'x')+'-'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+const norm=s=>(s||'').toString().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+const esc=s=>(s==null?'':String(s)).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=n=>'$'+Math.round(n||0).toLocaleString('es-CO');
+const fnum=(n,d=3)=>{n=+n||0;return Number.isInteger(n)?String(n):String(+n.toFixed(d)).replace('.',',')};
+const pnum=s=>{if(typeof s==='number')return s;s=String(s||'').trim().replace(/\$|\s/g,'');if(!s)return 0;if(s.includes('/')){const[a,b]=s.split('/');const d=pnum(b);return d?pnum(a)/d:0}
+  if(s.includes(','))return parseFloat(s.replace(/\./g,'').replace(',','.'))||0;const pts=s.split('.');if(pts.length>2)return parseFloat(s.replace(/\./g,''))||0;
+  if(pts.length===2&&pts[1].length===3&&+pts[0]>0)return parseFloat(pts[0]+pts[1])||0;return parseFloat(s)||0};
+const hoy=()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
+const redMil=n=>Math.round(n/1000)*1000;
+function toast(t){const e=$('#toast');e.textContent=t;e.style.display='block';clearTimeout(e._t);e._t=setTimeout(()=>e.style.display='none',2600)}
+
+/* ================= Cálculo ================= */
+const ins=id=>D.insumos.find(x=>x.id===id);
+const apuDe=id=>D.apus.find(x=>x.id===id);
+const cargo=id=>D.cargos.find(x=>x.id===id);
+const cuad=id=>D.cuadrillas.find(x=>x.id===id);
+function costoCuadrilla(id){const q=cuad(id);if(!q)return 0;return q.miembros.reduce((s,m)=>s+(cargo(m.cargo)?.jornal||0)*m.cant,0)}
+function costoMO(mo){if(!mo)return 0;if(mo.modo==='cuadrilla')return mo.rend>0?costoCuadrilla(mo.cuadrilla)/mo.rend:0;if(mo.modo==='dias')return costoCuadrilla(mo.cuadrilla)*(mo.dias||0);return +mo.valor||0}
+function calcAPU(a,pila=[]){
+  const r={mat:0,bas:0,eq:0,tr:0,mo:0,herr:0,total:0,lineas:[]};if(!a)return r;
+  if(pila.includes(a.id)){r.error='APU básico circular';return r}
+  for(const c of a.comp||[]){
+    if(c.tipo==='bas'){const b=apuDe(c.apu);const pu=b?calcAPU(b,[...pila,a.id]).total:0;const v=c.cant*(1+(c.desp||0)/100)*pu;r.bas+=v;r.lineas.push({c,nombre:b?b.nombre:'(básico borrado)',und:b?.und||'',precio:pu,v})}
+    else{const i=ins(c.ins);const p=i?i.precio:0;const v=c.cant*(1+(c.desp||0)/100)*p;const k=c.tipo==='mat'?'mat':(i?.tipo==='transporte'?'tr':'eq');r[k]+=v;r.lineas.push({c,nombre:i?i.nombre:'(insumo borrado)',und:i?.und||'',precio:p,v,est:i?.est})}
+  }
+  r.mo=costoMO(a.mo);r.herr=a.mo?.modo==='contratista'?0:r.mo*(a.herr??D.config.herrPct)/100;
+  r.total=r.mat+r.bas+r.eq+r.tr+r.mo+r.herr;return r}
+function apuEstimado(a,pila=[]){if(a.est)return true;for(const c of a.comp||[]){if(c.tipo==='bas'){const b=apuDe(c.apu);if(b&&!pila.includes(b.id)&&apuEstimado(b,[...pila,a.id]))return true}else if(ins(c.ins)?.est)return true}return false}
+function itemAPU(p,it){return it.tipo==='rapido'?it.apu:apuDe(it.apu)}
+function puItem(p,it){if(p.estado==='aprobado'&&it.puCongelado!=null)return it.puCongelado;return calcAPU(itemAPU(p,it)).total}
+function calcPres(p){
+  let cd=0;const caps=p.capitulos.map(c=>{const st=c.items.reduce((s,it)=>s+puItem(p,it)*(+it.cant||0),0);cd+=st;return st});
+  const a=cd*p.aiu.a/100,i=cd*p.aiu.i/100,u=cd*p.aiu.u/100;let iva=0;const t=(D.config.ivaPct||19)/100;
+  if(p.ivaModo==='utilidad')iva=u*t;else if(p.ivaModo==='pleno')iva=(cd+a+i+u)*t;
+  const total=cd+a+i+u+iva;return{caps,cd,a,i,u,iva,total,totalRed:redMil(total)}}
+
+/* ================= Navegación ================= */
+const esPC=()=>matchMedia('(min-width:900px)').matches;
+let RUTA=[];window.addEventListener('hashchange',render);
+function ir(h){if(location.hash==='#'+h)render();else location.hash=h}
+function setTitulo(t,atras){$('#titulo').textContent=t;$('#atras').hidden=!atras;$('#atras').onclick=()=>history.length>1?history.back():ir(atras)}
+function fab(f){const b=$('#fab');b.hidden=!f;b.onclick=f||null}
+function render(){
+  RUTA=(location.hash.slice(1)||'presupuestos').split('/').map(decodeURIComponent);const r=RUTA[0];
+  $$('nav a').forEach(a=>a.classList.toggle('on',a.dataset.n===r||(r==='apu'&&a.dataset.n==='biblioteca')||(r==='p'&&a.dataset.n==='presupuestos')));
+  fab(null);const v=$('#vista');v.innerHTML='';window.scrollTo(0,0);
+  if(r==='presupuestos')vPresupuestos(v);else if(r==='p')vPresupuesto(v,RUTA[1],RUTA[2],RUTA[3]);
+  else if(r==='biblioteca'||r==='apu')vBiblioteca(v,RUTA[1]);else if(r==='insumos')vInsumos(v,RUTA[1]);
+  else if(r==='mo')vMO(v);else if(r==='ajustes')vAjustes(v);else vPresupuestos(v)}
+$('#btnMenu').onclick=()=>modal(`<h3 style="margin-top:0">Más</h3><div class="btns"><button class="btn sec" onclick="exportar()">Descargar respaldo</button><button class="btn sec" onclick="cerrarModal();ir('ajustes')">Ajustes</button><button class="btn sec" onclick="cerrarModal()">Cerrar</button></div>`);
+
+/* ================= Modal ================= */
+function modal(html,on){$('#modalBox').innerHTML=html;$('#modal').classList.add('on');on&&on($('#modalBox'))}
+function cerrarModal(){$('#modal').classList.remove('on')}
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal')cerrarModal()});
+
+/* ================= Presupuestos ================= */
+const ESTADOS={borrador:'Borrador',enviado:'Enviado',aprobado:'Aprobado'};
+function vPresupuestos(v){
+  setTitulo('Presupuestos');fab(nuevoPresupuesto);
+  if(!D.presupuestos.length){v.innerHTML=`<div class="vacio">Aún no hay presupuestos.<br><br><button class="btn" onclick="nuevoPresupuesto()">Crear el primero</button></div>`;return}
+  const L=[...D.presupuestos].sort((a,b)=>(b.mod||'').localeCompare(a.mod||''));
+  v.innerHTML='<div class="card">'+L.map(p=>{const t=calcPres(p);return`<div class="fila" onclick="ir('p/${p.id}')"><div class="t">${esc(p.nombre)} <span class="chip ${p.estado==='aprobado'?'ok':p.estado==='enviado'?'bl':''}">${ESTADOS[p.estado]}</span>${p.rapido?'<span class="chip">rápido</span>':''}<small>${esc(p.cliente||'Sin cliente')} · ${esc(p.fecha)}</small></div><div class="v">${fmt(t.totalRed)}</div></div>`}).join('')+'</div>'}
+function nuevoPresupuesto(){
+  modal(`<h3 style="margin-top:0">Nuevo presupuesto</h3>
+  <label class="c"><span>Nombre</span><input class="i" id="np_n" placeholder="Ej. Cabaña lote 10"></label>
+  <label class="c"><span>Cliente</span><input class="i" id="np_c"></label>
+  <label class="c"><span>Tipo</span><select class="i" id="np_t"><option value="obra">Obra (capítulos y APU)</option><option value="rapido">Trabajo pequeño o mueble (modo rápido)</option></select></label>
+  <div class="btns"><button class="btn" id="np_ok">Crear</button><button class="btn sec" onclick="cerrarModal()">Cancelar</button></div>`,b=>{
+    $('#np_ok',b).onclick=()=>{const n=$('#np_n',b).value.trim()||'Presupuesto sin nombre';const rap=$('#np_t',b).value==='rapido';
+      const p={id:uid('p'),nombre:n,cliente:$('#np_c',b).value.trim(),proyecto:'',fecha:hoy(),estado:'borrador',rapido:rap,
+        aiu:{...D.config.aiu},ivaModo:'no',notas:'',capitulos:rap?[{id:uid('c'),nombre:'Trabajo',items:[]}]:[],mod:new Date().toISOString()};
+      D.presupuestos.push(p);guardar();cerrarModal();ir('p/'+p.id)}})}
+function presDe(id){return D.presupuestos.find(p=>p.id===id)}
+function bloqueado(p){return p.estado==='aprobado'}
+function vPresupuesto(v,id,sub,itId){
+  const p=presDe(id);if(!p){ir('presupuestos');return}
+  if(sub==='r'){const it=p.capitulos.flatMap(c=>c.items).find(x=>x.id===itId);if(!it){ir('p/'+id);return}vEditorAPU(v,it.apu,{pres:p,item:it});return}
+  setTitulo(p.nombre,'presupuestos');const t=calcPres(p);const bl=bloqueado(p);
+  if(!bl)fab(()=>agregarItem(p));
+  const caps=p.capitulos.map((c,ci)=>`<details class="card" open><summary>${esc(c.nombre)}<span class="s">${fmt(t.caps[ci])}</span></summary>
+    ${c.items.map(it=>{const a=itemAPU(p,it);const pu=puItem(p,it);const est=a&&apuEstimado(a);return`<div class="fila" onclick="abrirItem('${p.id}','${it.id}')"><div class="t">${esc(a?(a.cod&&!a.cod.startsWith('R')?a.cod+' ':'')+a.nombre:'(APU borrado)')}${it.tipo==='rapido'?' <span class="chip">rápido</span>':''}${est?' <span class="chip est">estimado</span>':''}<small>${fnum(it.cant)} ${esc(a?.und||'')} × ${fmt(pu)}</small></div><div class="v">${fmt(pu*(+it.cant||0))}</div></div>`}).join('')||'<div class="fila mut">Sin ítems</div>'}
+    ${bl?'':`<div class="btns pad" style="margin:0"><button class="btn mini sec" onclick="agregarItem(presDe('${p.id}'),'${c.id}')">+ Ítem</button><button class="btn mini sec" onclick="editarCap('${p.id}','${c.id}')">Renombrar o borrar</button></div>`}</details>`).join('');
+  v.innerHTML=`${bl?'<div class="aviso">Presupuesto aprobado: los precios quedaron congelados y no se puede editar. Para cambiarlo, vuélvelo a borrador.</div>':''}
+  <div class="card pad">
+   <div class="g2"><label class="c"><span>Nombre</span><input class="i" data-k="nombre" value="${esc(p.nombre)}"></label><label class="c"><span>Cliente</span><input class="i" data-k="cliente" value="${esc(p.cliente)}"></label></div>
+   <div class="g2"><label class="c"><span>Proyecto / dirección</span><input class="i" data-k="proyecto" value="${esc(p.proyecto)}"></label><label class="c"><span>Fecha</span><input class="i" type="date" data-k="fecha" value="${esc(p.fecha)}"></label></div>
+   <div class="g3"><label class="c"><span>Administración %</span><input class="i num" data-aiu="a" value="${fnum(p.aiu.a)}"></label><label class="c"><span>Imprevistos %</span><input class="i num" data-aiu="i" value="${fnum(p.aiu.i)}"></label><label class="c"><span>Utilidad %</span><input class="i num" data-aiu="u" value="${fnum(p.aiu.u)}"></label></div>
+   <div class="g2"><label class="c"><span>IVA</span><select class="i" data-k="ivaModo"><option value="no">No aplica</option><option value="utilidad">Sobre la utilidad (AIU)</option><option value="pleno">Pleno sobre el total</option></select></label>
+   <label class="c"><span>Estado</span><select class="i" id="estado">${Object.entries(ESTADOS).map(([k,n])=>`<option value="${k}" ${p.estado===k?'selected':''}>${n}</option>`).join('')}</select></label></div>
+   <label class="c"><span>Notas para el cliente (salen en el PDF)</span><textarea class="i" rows="2" data-k="notas">${esc(p.notas)}</textarea></label>
+  </div>
+  ${caps||'<div class="vacio">Agrega un capítulo o un ítem con el botón +</div>'}
+  ${bl?'':`<div class="btns"><button class="btn sec" onclick="nuevoCap('${p.id}')">+ Capítulo</button></div>`}
+  <div class="card">
+   <div class="tot"><span>Costo directo</span><b>${fmt(t.cd)}</b></div>
+   <div class="tot"><span>Administración ${fnum(p.aiu.a)} %</span><span>${fmt(t.a)}</span></div>
+   <div class="tot"><span>Imprevistos ${fnum(p.aiu.i)} %</span><span>${fmt(t.i)}</span></div>
+   <div class="tot"><span>Utilidad ${fnum(p.aiu.u)} %</span><span>${fmt(t.u)}</span></div>
+   <div class="tot"><span>IVA ${p.ivaModo==='no'?'(no aplica)':p.ivaModo==='utilidad'?'19 % sobre la utilidad':'19 % pleno'}</span><span>${fmt(t.iva)}</span></div>
+   <div class="tot g"><span>Total (redondeado al millar)</span><span>${fmt(t.totalRed)}</span></div>
+  </div>
+  <div class="btns"><button class="btn" onclick="imprimirPres('${p.id}')">PDF para el cliente</button><button class="btn sec" onclick="imprimirAPU('${p.id}')">PDF de APU</button><button class="btn sec" onclick="duplicarPres('${p.id}')">Duplicar</button><button class="btn peli" onclick="borrarPres('${p.id}')">Borrar</button></div>
+  <p class="peq mut">Precios de insumos con IVA incluido (lo que se paga al proveedor). Los ítems marcados "estimado" tienen precios o rendimientos sin verificar.</p>`;
+  $('[data-k="ivaModo"]',v).value=p.ivaModo;
+  $$('[data-k]',v).forEach(e=>{e.disabled=bl&&e.dataset.k!=='notas';e.onchange=()=>{p[e.dataset.k]=e.value;p.mod=new Date().toISOString();guardar();render()}});
+  $$('[data-aiu]',v).forEach(e=>{e.disabled=bl;e.onchange=()=>{p.aiu[e.dataset.aiu]=pnum(e.value);guardar();render()}});
+  $('#estado',v).onchange=e=>cambiarEstado(p,e.target.value)}
+function cambiarEstado(p,est){
+  if(est==='aprobado'){if(!confirm('Al aprobar se congelan los precios unitarios de este presupuesto. Los cambios en la biblioteca ya no lo afectan. ¿Aprobar?')){render();return}
+    p.capitulos.forEach(c=>c.items.forEach(it=>{it.puCongelado=calcAPU(itemAPU(p,it)).total;if(it.tipo!=='rapido')it.apuCongelado=JSON.parse(JSON.stringify(apuDe(it.apu)||null))}));p.aprobado=new Date().toISOString()}
+  else if(p.estado==='aprobado'){if(!confirm('Al volver a '+ESTADOS[est]+' los precios vuelven a tomarse de la biblioteca actual. ¿Seguir?')){render();return}p.capitulos.forEach(c=>c.items.forEach(it=>{delete it.puCongelado;delete it.apuCongelado}))}
+  p.estado=est;p.mod=new Date().toISOString();guardar();render()}
+function nuevoCap(pid){const p=presDe(pid);const n=prompt('Nombre del capítulo');if(!n)return;p.capitulos.push({id:uid('c'),nombre:n,items:[]});guardar();render()}
+function editarCap(pid,cid){const p=presDe(pid),c=p.capitulos.find(x=>x.id===cid);
+  modal(`<h3 style="margin-top:0">Capítulo</h3><label class="c"><span>Nombre</span><input class="i" id="cn" value="${esc(c.nombre)}"></label><div class="btns"><button class="btn" id="ok">Guardar</button><button class="btn peli" id="del">Borrar capítulo</button><button class="btn sec" onclick="cerrarModal()">Cancelar</button></div>`,b=>{
+  $('#ok',b).onclick=()=>{c.nombre=$('#cn',b).value.trim()||c.nombre;guardar();cerrarModal();render()};
+  $('#del',b).onclick=()=>{if(c.items.length&&!confirm('El capítulo tiene '+c.items.length+' ítems. ¿Borrarlo?'))return;p.capitulos=p.capitulos.filter(x=>x!==c);guardar();cerrarModal();render()}})}
+function capPorNombre(p,nombre){let c=p.capitulos.find(x=>x.nombre===nombre);if(!c){c={id:uid('c'),nombre,items:[]};p.capitulos.push(c);p.capitulos.sort((x,y)=>x.nombre.localeCompare(y.nombre,'es',{numeric:true}))}return c}
+function agregarItem(p,cid){
+  const libre=D.apus.filter(a=>!a.basico);
+  modal(`<h3 style="margin-top:0">Agregar ítem</h3>
+  <div class="btns"><button class="btn sec" id="rap">Ítem rápido (armar aquí)</button></div>
+  <input id="bq" class="i" placeholder="Buscar APU por nombre o código" autocomplete="off">
+  <div class="card lista-sel" id="res" style="margin-top:8px;max-height:50vh;overflow:auto"></div>`,b=>{
+    const pinta=()=>{const q=norm($('#bq',b).value);const L=libre.filter(a=>!q||norm(a.cod+' '+a.nombre).includes(q)).slice(0,80);
+      $('#res',b).innerHTML=L.map(a=>`<div class="fila" data-id="${a.id}"><div class="t">${esc(a.cod)} ${esc(a.nombre)}<small>${esc(a.cap)}</small></div><div class="v">${fmt(calcAPU(a).total)}/${esc(a.und)}</div></div>`).join('')||'<div class="fila mut">Nada encontrado</div>';
+      $$('#res .fila[data-id]',b).forEach(f=>f.onclick=()=>{const a=apuDe(f.dataset.id);const cant=pnum(prompt('Cantidad ('+a.und+')','1'));if(!cant&&cant!==0)return;
+        const c=cid?p.capitulos.find(x=>x.id===cid):(p.rapido?p.capitulos[0]||capPorNombre(p,'Trabajo'):capPorNombre(p,a.cap||'Varios'));
+        c.items.push({id:uid('i'),tipo:'apu',apu:a.id,cant});p.mod=new Date().toISOString();guardar();cerrarModal();render()})};
+    $('#bq',b).oninput=pinta;pinta();setTimeout(()=>$('#bq',b).focus(),50);
+    $('#rap',b).onclick=()=>{const n=prompt('Descripción del ítem (ej. Mueble de TV en melamina)');if(!n)return;const und=prompt('Unidad','und')||'und';
+      const c=cid?p.capitulos.find(x=>x.id===cid):(p.capitulos[0]||capPorNombre(p,'Trabajo'));
+      const it={id:uid('i'),tipo:'rapido',cant:1,apu:{id:uid('R'),cod:'R',cap:'',nombre:n,und,basico:false,comp:[],mo:{modo:'contratista',valor:0,nota:''},herr:D.config.herrPct,est:false,fuente:'',notas:'',origen:null}};
+      c.items.push(it);guardar();cerrarModal();ir('p/'+p.id+'/r/'+it.id)}})}
+function abrirItem(pid,iid){const p=presDe(pid);const it=p.capitulos.flatMap(c=>c.items).find(x=>x.id===iid);const a=itemAPU(p,it);const bl=bloqueado(p);
+  modal(`<h3 style="margin-top:0">${esc(a?.nombre||'Ítem')}</h3>
+  <label class="c"><span>Cantidad (${esc(a?.und||'')})</span><input class="i num" id="ca" value="${fnum(it.cant)}" ${bl?'disabled':''}></label>
+  <label class="c"><span>Capítulo</span><select class="i" id="cp" ${bl?'disabled':''}>${p.capitulos.map(c=>`<option value="${c.id}" ${c.items.includes(it)?'selected':''}>${esc(c.nombre)}</option>`).join('')}</select></label>
+  <p class="mut peq">Valor unitario: ${fmt(puItem(p,it))}${bl?' (congelado)':''}</p>
+  <div class="btns">${bl?'':'<button class="btn" id="ok">Guardar</button>'}<button class="btn sec" id="ver">Ver APU</button>${bl?'':'<button class="btn peli" id="del">Quitar</button>'}<button class="btn sec" onclick="cerrarModal()">Cerrar</button></div>`,b=>{
+    $('#ver',b).onclick=()=>{cerrarModal();if(it.tipo==='rapido')ir('p/'+pid+'/r/'+iid);else ir('apu/'+it.apu)};
+    if(bl)return;
+    $('#ok',b).onclick=()=>{it.cant=pnum($('#ca',b).value);const dest=p.capitulos.find(c=>c.id===$('#cp',b).value);p.capitulos.forEach(c=>c.items=c.items.filter(x=>x!==it));dest.items.push(it);p.mod=new Date().toISOString();guardar();cerrarModal();render()};
+    $('#del',b).onclick=()=>{p.capitulos.forEach(c=>c.items=c.items.filter(x=>x!==it));guardar();cerrarModal();render()}})}
+function duplicarPres(id){const p=JSON.parse(JSON.stringify(presDe(id)));p.id=uid('p');p.nombre+=' (copia)';p.estado='borrador';delete p.aprobado;p.capitulos.forEach(c=>{c.id=uid('c');c.items.forEach(it=>{it.id=uid('i');delete it.puCongelado;delete it.apuCongelado})});p.mod=new Date().toISOString();D.presupuestos.push(p);guardar();toast('Presupuesto duplicado');ir('p/'+p.id)}
+function borrarPres(id){if(!confirm('¿Borrar este presupuesto?'))return;D.presupuestos=D.presupuestos.filter(p=>p.id!==id);guardar();ir('presupuestos')}
+
+/* ================= Biblioteca APU ================= */
+let filtroBib='';
+function vBiblioteca(v,id){
+  const pc=esPC();
+  if(id&&!pc){vEditorAPU(v,apuDe(id));return}
+  setTitulo('Biblioteca de APU');fab(nuevoAPU);
+  v.innerHTML=`<div class="dos"><div class="izq"><input id="buscar" placeholder="Buscar APU o insumo" value="${esc(filtroBib)}"><div id="arbol" style="margin-top:8px"></div></div><div id="der">${pc?(id?'':'<div class="vacio">Escoge un APU de la lista</div>'):''}</div></div>`;
+  const pinta=()=>{const q=norm(filtroBib);const caps={};
+    D.apus.forEach(a=>{if(q&&!norm(a.cod+' '+a.nombre+' '+a.cap+' '+(a.comp||[]).map(c=>c.tipo==='bas'?apuDe(c.apu)?.nombre:ins(c.ins)?.nombre).join(' ')).includes(q))return;(caps[a.cap||'Sin capítulo']=caps[a.cap||'Sin capítulo']||[]).push(a)});
+    const orden=Object.keys(caps).sort((x,y)=>x==='Básicos'?-1:y==='Básicos'?1:x.localeCompare(y));
+    $('#arbol',v).innerHTML=orden.map(c=>`<details class="card" ${q||(id&&caps[c].some(a=>a.id===id))?'open':''}><summary>${esc(c)}<span class="s mut">${caps[c].length}</span></summary>${caps[c].map(a=>`<div class="fila ${a.id===id?'sel':''}" onclick="ir('apu/${a.id}')"><div class="t">${esc(a.cod)} ${esc(a.nombre)}${apuEstimado(a)?' <span class="chip est">estimado</span>':''}${a.origen?' <span class="chip bl">copia</span>':''}</div><div class="v">${fmt(calcAPU(a).total)}<small class="mut"> /${esc(a.und)}</small></div></div>`).join('')}</details>`).join('')||'<div class="vacio">Nada encontrado</div>'};
+  $('#buscar',v).oninput=e=>{filtroBib=e.target.value;pinta()};pinta();
+  if(pc&&id){const a=apuDe(id);if(a)vEditorAPU($('#der',v),a,{embebido:true});setTitulo('Biblioteca de APU')}}
+function nuevoAPU(){
+  modal(`<h3 style="margin-top:0">Nuevo APU</h3><p class="mut peq">Lo más rápido es duplicar uno parecido: abre el APU base y toca "Duplicar".</p>
+  <label class="c"><span>Código</span><input class="i" id="cod" placeholder="Ej. 07.20"></label>
+  <label class="c"><span>Nombre</span><input class="i" id="nom"></label>
+  <div class="g2"><label class="c"><span>Unidad</span><input class="i" id="und" value="m²"></label><label class="c"><span>Capítulo</span><input class="i" id="cap" list="caps"></label></div>
+  <datalist id="caps">${[...new Set(D.apus.map(a=>a.cap))].map(c=>`<option value="${esc(c)}">`).join('')}</datalist>
+  <label class="c"><input type="checkbox" id="bas"> Es un APU básico (se usa dentro de otros)</label>
+  <div class="btns"><button class="btn" id="ok">Crear</button><button class="btn sec" onclick="cerrarModal()">Cancelar</button></div>`,b=>{
+  $('#ok',b).onclick=()=>{const nom=$('#nom',b).value.trim();if(!nom){toast('Falta el nombre');return}const bas=$('#bas',b).checked;
+    const a={id:uid(bas?'B':'A'),cod:$('#cod',b).value.trim(),cap:bas?'Básicos':($('#cap',b).value.trim()||'Sin capítulo'),nombre:nom,und:$('#und',b).value.trim()||'und',basico:bas,comp:[],mo:{modo:'cuadrilla',cuadrilla:'OA',rend:10,nota:''},herr:D.config.herrPct,est:false,fuente:'',notas:'',origen:null};
+    D.apus.push(a);guardar();cerrarModal();ir('apu/'+a.id)}})}
+function duplicarAPU(id){const o=apuDe(id);const a=JSON.parse(JSON.stringify(o));a.id=uid(o.basico?'B':'A');a.cod=(o.cod||'')+'-c';a.nombre=o.nombre+' (copia)';a.origen={id:o.id,cod:o.cod,nombre:o.nombre,fecha:hoy(),base:JSON.parse(JSON.stringify(o))};D.apus.push(a);guardar();toast('APU duplicado. Cambia lo que sea distinto.');ir('apu/'+a.id)}
+function borrarAPU(id){const usos=D.apus.filter(a=>(a.comp||[]).some(c=>c.tipo==='bas'&&c.apu===id)).length+D.presupuestos.reduce((s,p)=>s+p.capitulos.reduce((t,c)=>t+c.items.filter(i=>i.apu===id).length,0),0);
+  if(!confirm(usos?`Este APU se usa en ${usos} lugar(es). Si lo borras esos ítems quedan en $0. ¿Borrar?`:'¿Borrar este APU?'))return;D.apus=D.apus.filter(a=>a.id!==id);guardar();ir('biblioteca')}
+function diferencias(a){if(!a.origen?.base)return[];const o=a.origen.base,d=[];const nom=c=>c.tipo==='bas'?(apuDe(c.apu)?.nombre||c.apu):(ins(c.ins)?.nombre||c.ins);
+  const k=c=>c.tipo+':'+(c.ins||c.apu);const mo=new Map(o.comp.map(c=>[k(c),c])),mn=new Map(a.comp.map(c=>[k(c),c]));
+  for(const [kk,c] of mn){const p=mo.get(kk);if(!p)d.push('Agregó '+nom(c));else if(p.cant!==c.cant||(p.desp||0)!==(c.desp||0))d.push(nom(c)+': '+fnum(p.cant)+' → '+fnum(c.cant)+((p.desp||0)!==(c.desp||0)?` (desperdicio ${fnum(p.desp||0)} → ${fnum(c.desp||0)} %)`:''))}
+  for(const [kk,c] of mo)if(!mn.has(kk))d.push('Quitó '+nom(c));
+  if(JSON.stringify(o.mo)!==JSON.stringify(a.mo))d.push('Mano de obra: '+txtMO(o.mo)+' → '+txtMO(a.mo));
+  if(o.und!==a.und)d.push('Unidad: '+o.und+' → '+a.und);return d}
+function txtMO(mo){if(!mo)return'';if(mo.modo==='cuadrilla')return(cuad(mo.cuadrilla)?.nombre||'')+', '+fnum(mo.rend)+'/día';if(mo.modo==='dias')return(cuad(mo.cuadrilla)?.nombre||'')+', '+fnum(mo.dias)+' días';return'contratista '+fmt(mo.valor)}
+
+/* ================= Editor de APU ================= */
+function vEditorAPU(v,a,ctx={}){
+  if(!a){v.innerHTML='<div class="vacio">APU no encontrado</div>';return}
+  const enPres=!!ctx.pres;const bl=enPres&&bloqueado(ctx.pres);
+  if(!ctx.embebido)setTitulo(a.nombre,enPres?'p/'+ctx.pres.id:'biblioteca');
+  const r=calcAPU(a);const cu=a.mo.modo!=='contratista'?costoCuadrilla(a.mo.cuadrilla):0;
+  const lin=t=>r.lineas.filter(l=>t==='mat'?l.c.tipo==='mat':t==='bas'?l.c.tipo==='bas':l.c.tipo==='eq');
+  const comp=(l)=>{const i=a.comp.indexOf(l.c);return`<div class="comp"><div class="n"><div class="t">${esc(l.nombre)}${l.est?' <span class="chip est">est.</span>':''}<div class="peq mut">${fmt(l.precio)} / ${esc(l.und)}</div></div><b>${fmt(l.v)}</b>${bl?'':`<button class="x" title="Quitar" onclick="quitarComp(${i})">×</button>`}</div>
+   <div class="cn"><label>Cantidad<input data-i="${i}" data-f="cant" value="${fnum(l.c.cant,4)}" inputmode="decimal" ${bl?'disabled':''}></label>${l.c.tipo!=='eq'?`<label>Desperdicio %<input data-i="${i}" data-f="desp" value="${fnum(l.c.desp||0)}" inputmode="decimal" ${bl?'disabled':''}></label>`:'<span></span>'}<span></span><span></span></div></div>`};
+  const blq=(t,tit,sub,add)=>`<details class="card" open><summary>${tit}<span class="s">${fmt(sub)}</span></summary>${lin(t).map(comp).join('')}${bl?'':`<div class="pad" style="padding-top:6px"><button class="btn mini sec" onclick="${add}">+ Agregar</button></div>`}</details>`;
+  const difs=diferencias(a);
+  v.innerHTML=`${enPres?`<div class="aviso">Ítem rápido de "${esc(ctx.pres.nombre)}". Solo vive en este presupuesto. ${bl?'':`<a href="javascript:pasarABiblioteca()">Guardarlo en la biblioteca</a>`}</div>`:''}
+  ${!enPres&&ctx.embebido?`<h2 style="margin-top:0">${esc(a.cod)} ${esc(a.nombre)}</h2>`:''}
+  <div class="card pad">
+   ${enPres?'':`<div class="g2"><label class="c"><span>Código</span><input class="i" data-a="cod" value="${esc(a.cod)}"></label><label class="c"><span>Unidad</span><input class="i" data-a="und" value="${esc(a.und)}"></label></div>`}
+   <label class="c"><span>Nombre</span><input class="i" data-a="nombre" value="${esc(a.nombre)}" ${bl?'disabled':''}></label>
+   ${enPres?`<label class="c"><span>Unidad</span><input class="i" data-a="und" value="${esc(a.und)}" ${bl?'disabled':''}></label>`:`<label class="c"><span>Capítulo</span><input class="i" data-a="cap" value="${esc(a.cap)}"></label>`}
+   ${a.origen?`<div class="peq mut">Copia de <a href="#apu/${esc(a.origen.id)}">${esc(a.origen.cod)} ${esc(a.origen.nombre)}</a> (${esc(a.origen.fecha)}).${difs.length?'<br>Cambios: '+difs.map(esc).join('; '):' Sin cambios todavía.'}</div>`:''}
+   ${a.fuente?`<div class="peq mut">Fuente: ${esc(a.fuente)}</div>`:''}
+  </div>
+  ${blq('mat','Materiales',r.mat,"agregarComp('mat')")}
+  ${(lin('bas').length||!enPres)?blq('bas','APU básicos (concretos, morteros…)',r.bas,"agregarComp('bas')"):''}
+  <details class="card" open><summary>Mano de obra<span class="s">${fmt(r.mo)}</span></summary><div class="pad">
+   <label class="c"><span>Forma de pago</span><select class="i" id="moModo" ${bl?'disabled':''}><option value="cuadrilla">Cuadrilla con rendimiento</option><option value="contratista">Contratista: valor fijo por unidad</option><option value="dias">Por días</option></select></label>
+   ${a.mo.modo==='contratista'?`<label class="c"><span>Valor por ${esc(a.und)} (lo que se le paga)</span><input class="i num" id="moValor" value="${fnum(a.mo.valor)}" inputmode="decimal" ${bl?'disabled':''}></label>`:
+   `<div class="g2"><label class="c"><span>Cuadrilla</span><select class="i" id="moCuad" ${bl?'disabled':''}>${D.cuadrillas.map(q=>`<option value="${q.id}" ${q.id===a.mo.cuadrilla?'selected':''}>${esc(q.nombre)} · ${fmt(costoCuadrilla(q.id))}/día</option>`).join('')}</select></label>
+   ${a.mo.modo==='cuadrilla'?`<label class="c"><span>Rendimiento (${esc(a.und)} por día)</span><input class="i num" id="moRend" value="${fnum(a.mo.rend)}" inputmode="decimal" ${bl?'disabled':''}></label>`:`<label class="c"><span>Días por ${esc(a.und)}</span><input class="i num" id="moDias" value="${fnum(a.mo.dias,4)}" inputmode="decimal" ${bl?'disabled':''}></label>`}</div>
+   <div class="peq mut">${a.mo.modo==='cuadrilla'?`${fmt(cu)} por día ÷ ${fnum(a.mo.rend)} ${esc(a.und)}/día`:`${fmt(cu)} por día × ${fnum(a.mo.dias,4)} días`} = ${fmt(r.mo)} por ${esc(a.und)}</div>`}
+   <label class="c"><span>Nota de mano de obra</span><input class="i" id="moNota" value="${esc(a.mo.nota||'')}" ${bl?'disabled':''}></label>
+  </div></details>
+  ${blq('eq','Equipo y transporte',r.eq+r.tr,"agregarComp('eq')")}
+  <div class="card">
+   <div class="tot"><span>Herramienta menor ${a.mo.modo==='contratista'?'(no aplica con contratista)':`<input id="herr" class="num" style="width:56px;padding:3px 5px;border:1px solid var(--linea);border-radius:6px" value="${fnum(a.herr??D.config.herrPct)}" ${bl?'disabled':''}> % de la MO`}</span><span>${fmt(r.herr)}</span></div>
+   <div class="tot g"><span>Valor unitario por ${esc(a.und)}</span><span>${fmt(r.total)}</span></div>
+  </div>
+  <div class="card pad"><label class="c"><span>Notas</span><textarea class="i" rows="2" data-a="notas" ${bl?'disabled':''}>${esc(a.notas||'')}</textarea></label>
+   <label class="c"><input type="checkbox" id="est" ${a.est?'checked':''} ${bl?'disabled':''}> Rendimiento o valores estimados sin verificar</label></div>
+  <div class="btns">${enPres?'':`<button class="btn" onclick="duplicarAPU('${a.id}')">Duplicar para crear uno nuevo</button><button class="btn peli" onclick="borrarAPU('${a.id}')">Borrar</button>`}</div>`;
+  window.APU_ACTUAL=a;window.CTX_ACTUAL=ctx;
+  const cambio=()=>{if(ctx.pres)ctx.pres.mod=new Date().toISOString();guardar();redibujar()};
+  if(bl)return;
+  $$('[data-a]',v).forEach(e=>e.onchange=()=>{a[e.dataset.a]=e.value;cambio()});
+  $$('[data-i]',v).forEach(e=>e.onchange=()=>{a.comp[+e.dataset.i][e.dataset.f]=pnum(e.value);cambio()});
+  $('#moModo',v).value=a.mo.modo;
+  $('#moModo',v).onchange=e=>{const m=e.target.value;a.mo={modo:m,nota:a.mo.nota||'',cuadrilla:a.mo.cuadrilla||'OA',rend:a.mo.rend||10,dias:a.mo.dias||1,valor:a.mo.valor||0};cambio()};
+  $('#moValor',v)&&($('#moValor',v).onchange=e=>{a.mo.valor=pnum(e.target.value);cambio()});
+  $('#moCuad',v)&&($('#moCuad',v).onchange=e=>{a.mo.cuadrilla=e.target.value;cambio()});
+  $('#moRend',v)&&($('#moRend',v).onchange=e=>{a.mo.rend=pnum(e.target.value);cambio()});
+  $('#moDias',v)&&($('#moDias',v).onchange=e=>{a.mo.dias=pnum(e.target.value);cambio()});
+  $('#moNota',v).onchange=e=>{a.mo.nota=e.target.value;cambio()};
+  $('#herr',v)&&($('#herr',v).onchange=e=>{a.herr=pnum(e.target.value);cambio()});
+  $('#est',v).onchange=e=>{a.est=e.target.checked;cambio()}}
+function redibujar(){const y=window.scrollY;render();window.scrollTo(0,y)}
+function quitarComp(i){window.APU_ACTUAL.comp.splice(i,1);guardar();redibujar()}
+function agregarComp(t){const a=window.APU_ACTUAL;
+  const L=t==='bas'?D.apus.filter(x=>x.basico&&x.id!==a.id):D.insumos.filter(x=>t==='mat'?x.tipo==='material':x.tipo!=='material');
+  modal(`<h3 style="margin-top:0">${t==='bas'?'Agregar APU básico':t==='mat'?'Agregar material':'Agregar equipo o transporte'}</h3>
+  <input id="bq" class="i" placeholder="Buscar" autocomplete="off"><div class="card lista-sel" id="res" style="margin-top:8px;max-height:46vh;overflow:auto"></div>
+  ${t==='bas'?'':`<button class="btn sec mini" id="nuevo">+ Crear insumo nuevo</button>`}`,b=>{
+    const pinta=()=>{const q=norm($('#bq',b).value);$('#res',b).innerHTML=L.filter(x=>!q||norm(x.nombre).includes(q)).slice(0,80).map(x=>`<div class="fila" data-id="${x.id}"><div class="t">${esc(x.nombre)}${x.est?' <span class="chip est">est.</span>':''}<small>${esc(x.und)}</small></div><div class="v">${fmt(t==='bas'?calcAPU(x).total:x.precio)}</div></div>`).join('')||'<div class="fila mut">Nada encontrado</div>';
+      $$('#res .fila[data-id]',b).forEach(f=>f.onclick=()=>{const c=pnum(prompt('Cantidad por '+a.und,'1'));if(!c)return;a.comp.push(t==='bas'?{tipo:'bas',apu:f.dataset.id,cant:c,desp:0}:{tipo:t,ins:f.dataset.id,cant:c,desp:t==='mat'?5:0});guardar();cerrarModal();redibujar()})};
+    $('#bq',b).oninput=pinta;pinta();setTimeout(()=>$('#bq',b).focus(),50);
+    $('#nuevo',b)&&($('#nuevo',b).onclick=()=>{cerrarModal();editarInsumo(null,t==='mat'?'material':'equipo',nuevo=>{const c=pnum(prompt('Cantidad por '+a.und,'1'));if(c){a.comp.push({tipo:t,ins:nuevo.id,cant:c,desp:t==='mat'?5:0});guardar()}redibujar()})})})}
+function pasarABiblioteca(){const ctx=window.CTX_ACTUAL,a=window.APU_ACTUAL;const cod=prompt('Código para la biblioteca','');if(cod===null)return;const cap=prompt('Capítulo','14 Carpintería en madera y mobiliario');
+  const n=JSON.parse(JSON.stringify(a));n.id=uid('A');n.cod=cod;n.cap=cap||'Sin capítulo';D.apus.push(n);ctx.item.tipo='apu';ctx.item.apu=n.id;guardar();toast('Guardado en la biblioteca');ir('p/'+ctx.pres.id)}
+
+/* ================= Insumos ================= */
+let filtroIns='';
+function vInsumos(v){setTitulo('Insumos y precios');fab(()=>editarInsumo(null,'material'));
+  v.innerHTML=`<input id="buscar" placeholder="Buscar insumo" value="${esc(filtroIns)}"><p class="peq mut">Precios con IVA incluido. Los marcados "est." son estimados sin verificar: cámbialos cuando tengas cotización.</p><div id="li"></div>`;
+  const TIP={material:'Materiales',equipo:'Equipo',transporte:'Transporte'};
+  const pinta=()=>{const q=norm(filtroIns);const g={};D.insumos.filter(x=>!q||norm(x.nombre+' '+x.fuente).includes(q)).forEach(x=>(g[x.tipo]=g[x.tipo]||[]).push(x));
+    $('#li',v).innerHTML=Object.keys(TIP).filter(k=>g[k]).map(k=>`<details class="card" open><summary>${TIP[k]}<span class="s mut">${g[k].length}</span></summary>${g[k].sort((a,b)=>a.nombre.localeCompare(b.nombre)).map(x=>`<div class="fila" onclick="editarInsumo('${x.id}')"><div class="t">${esc(x.nombre)}${x.est?' <span class="chip est">est.</span>':''}<small>${esc(x.fuente)} · ${esc(x.fecha)}</small></div><div class="v">${fmt(x.precio)}<small class="mut"> /${esc(x.und)}</small></div></div>`).join('')}</details>`).join('')||'<div class="vacio">Nada encontrado</div>'};
+  $('#buscar',v).oninput=e=>{filtroIns=e.target.value;pinta()};pinta()}
+function editarInsumo(id,tipo,despues){const x=id?ins(id):{id:uid('i'),nombre:'',und:'und',tipo:tipo||'material',precio:0,iva:'incl',fuente:'',fecha:hoy(),est:false};
+  const usos=id?D.apus.filter(a=>(a.comp||[]).some(c=>c.ins===id)).length:0;
+  modal(`<h3 style="margin-top:0">${id?'Insumo':'Nuevo insumo'}</h3>
+  <label class="c"><span>Nombre</span><input class="i" id="n" value="${esc(x.nombre)}"></label>
+  <div class="g3"><label class="c"><span>Unidad</span><input class="i" id="u" value="${esc(x.und)}"></label><label class="c"><span>Tipo</span><select class="i" id="t"><option value="material">Material</option><option value="equipo">Equipo</option><option value="transporte">Transporte</option></select></label><label class="c"><span>Precio con IVA</span><input class="i num" id="p" value="${fnum(x.precio)}" inputmode="decimal"></label></div>
+  <div class="g2"><label class="c"><span>Proveedor o fuente</span><input class="i" id="f" value="${esc(x.fuente)}"></label><label class="c"><span>Fecha del precio</span><input class="i" type="date" id="d" value="${esc(x.fecha)}"></label></div>
+  <label class="c"><input type="checkbox" id="e" ${x.est?'checked':''}> Estimado sin verificar</label>
+  ${usos?`<p class="peq mut">Se usa en ${usos} APU. Al cambiar el precio cambian esos APU y los presupuestos no aprobados.</p>`:''}
+  <div class="btns"><button class="btn" id="ok">Guardar</button>${id&&!usos?'<button class="btn peli" id="del">Borrar</button>':''}<button class="btn sec" onclick="cerrarModal()">Cancelar</button></div>`,b=>{
+    $('#t',b).value=x.tipo;
+    $('#ok',b).onclick=()=>{const n=$('#n',b).value.trim();if(!n){toast('Falta el nombre');return}const pr=pnum($('#p',b).value);
+      Object.assign(x,{nombre:n,und:$('#u',b).value.trim()||'und',tipo:$('#t',b).value,precio:pr,fuente:$('#f',b).value.trim(),fecha:$('#d',b).value,est:$('#e',b).checked});
+      if(!id)D.insumos.push(x);guardar();cerrarModal();if(despues)despues(x);else render()};
+    $('#del',b)&&($('#del',b).onclick=()=>{D.insumos=D.insumos.filter(y=>y.id!==id);guardar();cerrarModal();render()})})}
+
+/* ================= Mano de obra ================= */
+function vMO(v){setTitulo('Mano de obra');
+  v.innerHTML=`<h2>Jornales (día limpio, pagado al día)</h2><div class="card">${D.cargos.map(c=>`<div class="fila"><div class="t">${esc(c.nombre)}</div><input class="i num" style="width:130px" data-c="${c.id}" value="${fnum(c.jornal)}" inputmode="decimal"></div>`).join('')}<div class="pad"><button class="btn mini sec" onclick="nuevoCargo()">+ Cargo</button></div></div>
+  <h2>Cuadrillas</h2><div class="card">${D.cuadrillas.map(q=>`<div class="fila" onclick="editarCuadrilla('${q.id}')"><div class="t">${esc(q.nombre)}<small>${q.miembros.map(m=>fnum(m.cant)+' '+esc(cargo(m.cargo)?.nombre||'')).join(' + ')}</small></div><div class="v">${fmt(costoCuadrilla(q.id))}/día</div></div>`).join('')}<div class="pad"><button class="btn mini sec" onclick="editarCuadrilla(null)">+ Cuadrilla</button></div></div>
+  <p class="peq mut">Jornada de 8 h de lunes a viernes y medio día el sábado. El maestro va en la administración del AIU. Herramienta menor: ${fnum(D.config.herrPct)} % de la mano de obra (se cambia en Ajustes).</p>`;
+  $$('[data-c]',v).forEach(e=>e.onchange=()=>{cargo(e.dataset.c).jornal=pnum(e.value);guardar();render()})}
+function nuevoCargo(){const n=prompt('Nombre del cargo (ej. Soldador)');if(!n)return;const j=pnum(prompt('Jornal por día','150000'));D.cargos.push({id:uid('cg'),nombre:n,jornal:j});guardar();render()}
+function editarCuadrilla(id){const q=id?cuad(id):{id:uid('q'),nombre:'',miembros:[{cargo:'oficial',cant:1},{cargo:'ayudante',cant:1}]};
+  modal(`<h3 style="margin-top:0">Cuadrilla</h3><label class="c"><span>Nombre</span><input class="i" id="n" value="${esc(q.nombre)}"></label>
+  ${D.cargos.map(c=>`<label class="c"><span>${esc(c.nombre)} (cantidad)</span><input class="i num" data-cg="${c.id}" value="${fnum(q.miembros.find(m=>m.cargo===c.id)?.cant||0)}" inputmode="decimal"></label>`).join('')}
+  <div class="btns"><button class="btn" id="ok">Guardar</button><button class="btn sec" onclick="cerrarModal()">Cancelar</button></div>`,b=>{
+    $('#ok',b).onclick=()=>{q.miembros=$$('[data-cg]',b).map(e=>({cargo:e.dataset.cg,cant:pnum(e.value)})).filter(m=>m.cant>0);q.nombre=$('#n',b).value.trim()||q.miembros.map(m=>fnum(m.cant)+' '+cargo(m.cargo).nombre.toLowerCase()).join(' + ');if(!id)D.cuadrillas.push(q);guardar();cerrarModal();render()}})}
+
+/* ================= Ajustes y respaldo ================= */
+function vAjustes(v){setTitulo('Ajustes');const c=D.config;
+  v.innerHTML=`<div class="card pad"><div class="g2"><label class="c"><span>Empresa</span><input class="i" data-cf="empresa" value="${esc(c.empresa)}"></label><label class="c"><span>Profesional</span><input class="i" data-cf="profesional" value="${esc(c.profesional)}"></label></div>
+  <div class="g3"><label class="c"><span>A % por defecto</span><input class="i num" data-aiu="a" value="${fnum(c.aiu.a)}"></label><label class="c"><span>I % por defecto</span><input class="i num" data-aiu="i" value="${fnum(c.aiu.i)}"></label><label class="c"><span>U % por defecto</span><input class="i num" data-aiu="u" value="${fnum(c.aiu.u)}"></label></div>
+  <div class="g2"><label class="c"><span>Herramienta menor % de MO</span><input class="i num" data-cfn="herrPct" value="${fnum(c.herrPct)}"></label><label class="c"><span>Tarifa de IVA %</span><input class="i num" data-cfn="ivaPct" value="${fnum(c.ivaPct)}"></label></div>
+  <label class="c"><span>Datos de contacto para el PDF</span><input class="i" data-cf="contacto" value="${esc(c.contacto||'')}" placeholder="Teléfono · correo"></label></div>
+  <h2>Respaldo</h2><div class="card pad"><p class="peq mut">Los datos viven en este equipo y funcionan sin internet. Descarga un respaldo seguido y guárdalo en Drive.${D.respaldo?' Último respaldo: '+esc(D.respaldo.slice(0,16).replace('T',' ')):''}</p>
+  <div class="btns"><button class="btn" onclick="exportar()">Descargar respaldo</button><label class="btn sec">Restaurar desde archivo<input type="file" accept=".json" hidden id="imp"></label><button class="btn sec" onclick="verHistorial()">Versiones guardadas</button></div></div>
+  <h2>Biblioteca inicial</h2><div class="card pad"><p class="peq mut">Base del ${esc(D.base||'')}: ${D.apus.length} APU, ${D.insumos.length} insumos. Precios de Gestión de materiales, cotizaciones y web; lo marcado "estimado" está sin verificar.</p>
+  <button class="btn sec" onclick="actualizarBase()">Traer APU e insumos nuevos de la base</button></div>`;
+  $$('[data-cf]',v).forEach(e=>e.onchange=()=>{c[e.dataset.cf]=e.value;guardar()});$$('[data-cfn]',v).forEach(e=>e.onchange=()=>{c[e.dataset.cfn]=pnum(e.value);guardar()});
+  $$('[data-aiu]',v).forEach(e=>e.onchange=()=>{c.aiu[e.dataset.aiu]=pnum(e.value);guardar()});
+  $('#imp',v).onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const o=JSON.parse(await f.text());if(!o.apus||!o.insumos)throw new Error('No es un respaldo de Presupuestos');if(!confirm('Esto reemplaza todos los datos de este equipo por los del archivo. ¿Seguir?'))return;D=o;await guardarYa();toast('Restaurado');render()}catch(er){alert(er.message)}}}
+function exportar(){D.respaldo=new Date().toISOString();guardar();const b=new Blob([JSON.stringify(D)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='respaldo-presupuestos-'+D.respaldo.slice(0,10)+'.json';a.click();cerrarModal();toast('Respaldo descargado')}
+async function verHistorial(){const h=(await kvGet('historial'))||[];modal(`<h3 style="margin-top:0">Versiones guardadas</h3><p class="peq mut">Se guarda una versión cada 10 minutos de trabajo (las últimas 15).</p><div class="card">${h.map((x,i)=>`<div class="fila" data-i="${i}"><div class="t">${new Date(x.fecha).toLocaleString('es-CO')}<small>${x.datos.presupuestos.length} presupuestos · ${x.datos.apus.length} APU</small></div><button class="btn mini sec">Volver a esta</button></div>`).join('')||'<div class="fila mut">Todavía no hay versiones</div>'}</div><button class="btn sec" onclick="cerrarModal()">Cerrar</button>`,b=>{
+  $$('.fila[data-i]',b).forEach(f=>f.querySelector('button').onclick=async()=>{if(!confirm('¿Volver a la versión de '+new Date(h[+f.dataset.i].fecha).toLocaleString('es-CO')+'? Lo actual queda guardado como otra versión.'))return;h.unshift({fecha:new Date().toISOString(),datos:JSON.parse(JSON.stringify(D))});await kvSet('historial',h.slice(0,15));D=JSON.parse(JSON.stringify(h[+f.dataset.i+1].datos));await kvSet('datos',D);cerrarModal();toast('Versión recuperada');render()})})}
+async function actualizarBase(){try{const b=await (await fetch('datos-base.json',{cache:'no-store'})).json();let n=0,m=0;
+  b.insumos.forEach(x=>{if(!ins(x.id)){D.insumos.push(x);n++}});b.apus.forEach(x=>{if(!apuDe(x.id)){D.apus.push(x);m++}});
+  b.cuadrillas.forEach(x=>{if(!cuad(x.id))D.cuadrillas.push(x)});b.cargos.forEach(x=>{if(!cargo(x.id))D.cargos.push(x)});
+  guardar();toast(`Llegaron ${m} APU y ${n} insumos nuevos. Lo que ya tenías no se tocó.`);render()}catch(e){toast('Sin conexión para traer la base')}}
+
+/* ================= Impresión ================= */
+function encabezado(p,tit){const c=D.config;return`<div class="enc"><div><h1>${esc(tit)}</h1><div>${esc(p.nombre)}${p.proyecto?' · '+esc(p.proyecto):''}</div><div>Cliente: ${esc(p.cliente||'—')}</div></div><div style="text-align:right"><b>${esc(c.empresa)}</b><br>${esc(c.profesional)}<br>${esc(c.contacto||'')}<br>Fecha: ${esc(p.fecha)}</div></div>`}
+function fechaPrecios(p){const ids=new Set();p.capitulos.forEach(c=>c.items.forEach(it=>{const a=itemAPU(p,it);(function rec(x,pila){(x?.comp||[]).forEach(k=>{if(k.tipo==='bas'){const b=apuDe(k.apu);if(b&&!pila.includes(b.id))rec(b,[...pila,b.id])}else ids.add(k.ins)})})(a,[])}));
+  const f=[...ids].map(i=>ins(i)?.fecha).filter(Boolean).sort();return f.length?f[0]+' a '+f[f.length-1]:''}
+function imprimirPres(id){const p=presDe(id),t=calcPres(p);
+  const filas=p.capitulos.map((c,ci)=>`<tr class="cap"><td colspan="5">${esc(c.nombre)}</td><td class="n">${fmt(t.caps[ci])}</td></tr>`+c.items.map(it=>{const a=itemAPU(p,it);const pu=puItem(p,it);return`<tr><td>${esc(a&&a.cod&&a.cod!=='R'?a.cod:'')}</td><td>${esc(a?.nombre||'')}</td><td>${esc(a?.und||'')}</td><td class="n">${fnum(it.cant,2)}</td><td class="n">${fmt(pu)}</td><td class="n">${fmt(pu*(+it.cant||0))}</td></tr>`}).join('')).join('');
+  $('#impresion').innerHTML=`${encabezado(p,'Presupuesto')}<table class="imp"><thead><tr><th>Cód.</th><th>Descripción</th><th>Und</th><th class="n">Cant.</th><th class="n">Valor unitario</th><th class="n">Valor total</th></tr></thead><tbody>${filas}</tbody></table>
+  <table class="tabla-tot"><tr><td>Costo directo</td><td class="n">${fmt(t.cd)}</td></tr><tr><td>Administración ${fnum(p.aiu.a)} %</td><td class="n">${fmt(t.a)}</td></tr><tr><td>Imprevistos ${fnum(p.aiu.i)} %</td><td class="n">${fmt(t.i)}</td></tr><tr><td>Utilidad ${fnum(p.aiu.u)} %</td><td class="n">${fmt(t.u)}</td></tr><tr><td>IVA ${p.ivaModo==='no'?'(no aplica)':p.ivaModo==='utilidad'?(D.config.ivaPct||19)+' % sobre la utilidad':(D.config.ivaPct||19)+' %'}</td><td class="n">${fmt(t.iva)}</td></tr><tr><td><b>Total</b></td><td class="n"><b>${fmt(t.totalRed)}</b></td></tr></table>
+  <p style="margin-top:14px">${p.ivaModo==='no'?'Valores sin IVA sobre el servicio. ':p.ivaModo==='utilidad'?'Incluye IVA sobre la utilidad. ':'Incluye IVA. '}Total redondeado al millar. Precios de materiales con IVA incluido, tomados de cotizaciones y listas de proveedores${fechaPrecios(p)?' ('+fechaPrecios(p)+')':''}. Presupuesto elaborado el ${esc(p.fecha)}.</p>${p.notas?`<p>${esc(p.notas).replace(/\n/g,'<br>')}</p>`:''}`;
+  setTimeout(()=>window.print(),100)}
+function imprimirAPU(id){const p=presDe(id);const vistos=new Set();let html=encabezado(p,'Análisis de precios unitarios');let n=0;
+  p.capitulos.forEach(c=>c.items.forEach(it=>{const a=(p.estado==='aprobado'&&it.apuCongelado)||itemAPU(p,it);if(!a||vistos.has(a.id))return;vistos.add(a.id);const r=calcAPU(a);
+    const fl=t=>r.lineas.filter(l=>t==='mat'?l.c.tipo==='mat':t==='bas'?l.c.tipo==='bas':l.c.tipo==='eq');
+    const tb=(tit,L)=>L.length?`<tr class="cap"><td colspan="6">${tit}</td></tr>`+L.map(l=>`<tr><td>${esc(l.nombre)}</td><td>${esc(l.und)}</td><td class="n">${fnum(l.c.cant,4)}</td><td class="n">${fnum(l.c.desp||0)} %</td><td class="n">${fmt(l.precio)}</td><td class="n">${fmt(l.v)}</td></tr>`).join(''):'';
+    html+=`<div ${n++%2===1?'':''} style="margin-bottom:14px;page-break-inside:avoid"><h3>${esc(a.cod&&a.cod!=='R'?a.cod+' ':'')}${esc(a.nombre)} · por ${esc(a.und)}</h3><table class="imp"><thead><tr><th>Insumo</th><th>Und</th><th class="n">Cant.</th><th class="n">Desp.</th><th class="n">Precio</th><th class="n">Valor</th></tr></thead><tbody>
+    ${tb('Materiales',fl('mat'))}${tb('APU básicos',fl('bas'))}${tb('Equipo y transporte',fl('eq'))}
+    <tr class="cap"><td colspan="5">Mano de obra (${esc(txtMO(a.mo))})</td><td class="n">${fmt(r.mo)}</td></tr>
+    ${r.herr?`<tr><td colspan="5">Herramienta menor ${fnum(a.herr??D.config.herrPct)} % de la mano de obra</td><td class="n">${fmt(r.herr)}</td></tr>`:''}
+    <tr><td colspan="5"><b>Valor unitario</b></td><td class="n"><b>${fmt(p.estado==='aprobado'&&it.puCongelado!=null?it.puCongelado:r.total)}</b></td></tr></tbody></table></div>`}));
+  $('#impresion').innerHTML=html;setTimeout(()=>window.print(),100)}
+window.addEventListener('afterprint',()=>{$('#impresion').innerHTML=''});
+
+/* ================= Arranque ================= */
+(async function(){
+  try{D=await kvGet('datos')}catch(e){}
+  if(!D){try{const b=await (await fetch('datos-base.json')).json();D={...b,base:b.generado,presupuestos:[]};await guardarYa()}catch(e){$('#vista').innerHTML='<div class="vacio">Abre la app una vez con internet para cargar la biblioteca.</div>';return}}
+  render();
+  if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+  try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist()}catch(e){}
+})();
+</script>
+</body>
+</html>

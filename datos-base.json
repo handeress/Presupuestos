@@ -1,0 +1,9055 @@
+{
+"version": 1,
+"generado": "2026-11-21",
+"insumos": [
+{
+"id": "cemento",
+"nombre": "Cemento gris 50 kg",
+"und": "bulto",
+"tipo": "material",
+"precio": 31000,
+"iva": "incl",
+"fuente": "Ferretería Industrial-izada (Silvania)",
+"fecha": "2026-10-29",
+"est": false
+},
+{
+"id": "mixto",
+"nombre": "Mixto (arena + grava)",
+"und": "m³",
+"tipo": "material",
+"precio": 120000,
+"iva": "incl",
+"fuente": "Ferretería Industrial-izada (Silvania)",
+"fecha": "2026-10-21",
+"est": false
+},
+{
+"id": "arena",
+"nombre": "Arena de peña",
+"und": "m³",
+"tipo": "material",
+"precio": 110000,
+"iva": "incl",
+"fuente": "Ferretería Los Pachos (Suesca)",
+"fecha": "2026-02-25",
+"est": false
+},
+{
+"id": "gravilla",
+"nombre": "Gravilla / triturado 3/4\"",
+"und": "m³",
+"tipo": "material",
+"precio": 170000,
+"iva": "incl",
+"fuente": "Soluciones PT SAS (viaje 7 m³)",
+"fecha": "2026-11-09",
+"est": false
+},
+{
+"id": "recebo",
+"nombre": "Recebo fino",
+"und": "m³",
+"tipo": "material",
+"precio": 78571,
+"iva": "incl",
+"fuente": "Los Pachos (viaje 7 m³ con factura)",
+"fecha": "2026-11-21",
+"est": false
+},
+{
+"id": "piedra",
+"nombre": "Piedra rajón para ciclópeo",
+"und": "m³",
+"tipo": "material",
+"precio": 130000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "premezclado",
+"nombre": "Concreto premezclado 3000 psi",
+"und": "m³",
+"tipo": "material",
+"precio": 577150,
+"iva": "incl",
+"fuente": "OneEstimate (Construdata 2026)",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "cal",
+"nombre": "Cal viva 50 kg",
+"und": "bulto",
+"tipo": "material",
+"precio": 35000,
+"iva": "no",
+"fuente": "Ferretería Industrial-izada",
+"fecha": "2026-10-29",
+"est": false
+},
+{
+"id": "agua",
+"nombre": "Agua para obra",
+"und": "m³",
+"tipo": "material",
+"precio": 5000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "bloque4",
+"nombre": "Bloque #4 rojo 10x20x30",
+"und": "und",
+"tipo": "material",
+"precio": 1800,
+"iva": "no",
+"fuente": "Ferrecamy (Silvania)",
+"fecha": "2026-04-14",
+"est": false
+},
+{
+"id": "bloque5",
+"nombre": "Bloque #5 12x20x30",
+"und": "und",
+"tipo": "material",
+"precio": 1950,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "ladrillo",
+"nombre": "Ladrillo común / recocido",
+"und": "und",
+"tipo": "material",
+"precio": 1000,
+"iva": "no",
+"fuente": "Los Pachos (Suesca)",
+"fecha": "2026-09-07",
+"est": false
+},
+{
+"id": "tolete",
+"nombre": "Ladrillo tolete a la vista",
+"und": "und",
+"tipo": "material",
+"precio": 1300,
+"iva": "no",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "prensado",
+"nombre": "Ladrillo prensado de fachada",
+"und": "und",
+"tipo": "material",
+"precio": 2400,
+"iva": "no",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "portante",
+"nombre": "Bloque estructural portante",
+"und": "und",
+"tipo": "material",
+"precio": 3200,
+"iva": "no",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "acero",
+"nombre": "Acero de refuerzo 60.000 psi (varilla 1/2\", por kg)",
+"und": "kg",
+"tipo": "material",
+"precio": 4614,
+"iva": "incl",
+"fuente": "Varilla 1/2\" $27.500 / 5,96 kg (Ferretería Industrial-izada 06/10)",
+"fecha": "2026-11-21",
+"est": false
+},
+{
+"id": "alambre",
+"nombre": "Alambre negro",
+"und": "kg",
+"tipo": "material",
+"precio": 7500,
+"iva": "incl",
+"fuente": "Ferretería Industrial-izada",
+"fecha": "2026-10-29",
+"est": false
+},
+{
+"id": "malla",
+"nombre": "Malla electrosoldada 4 mm panel 6x2,35 m",
+"und": "und",
+"tipo": "material",
+"precio": 110000,
+"iva": "incl",
+"fuente": "Los Pachos (Suesca)",
+"fecha": "2026-02-25",
+"est": false
+},
+{
+"id": "perfil_kg",
+"nombre": "Perfil estructural de acero (por kg)",
+"und": "kg",
+"tipo": "material",
+"precio": 7500,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "steeldeck",
+"nombre": "Lámina steel deck cal. 22",
+"und": "m²",
+"tipo": "material",
+"precio": 68000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "platina",
+"nombre": "Platina con pernos de anclaje",
+"und": "und",
+"tipo": "material",
+"precio": 45000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "anticorrosivo",
+"nombre": "Anticorrosivo",
+"und": "galón",
+"tipo": "material",
+"precio": 75000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "esmalte",
+"nombre": "Esmalte sintético",
+"und": "galón",
+"tipo": "material",
+"precio": 95000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "soldadura_e",
+"nombre": "Soldadura eléctrica 6013",
+"und": "kg",
+"tipo": "material",
+"precio": 22000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "correa_c",
+"nombre": "Perfil C 160x60 cal.16 (correa)",
+"und": "m",
+"tipo": "material",
+"precio": 28000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "bloquelosa",
+"nombre": "Bloquelosa 80x8x23",
+"und": "und",
+"tipo": "material",
+"precio": 5600,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "casetón",
+"nombre": "Casetón en icopor para placa aligerada",
+"und": "m²",
+"tipo": "material",
+"precio": 18000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "repisa",
+"nombre": "Repisa de pino 8x4 cm x 3 m",
+"und": "und",
+"tipo": "material",
+"precio": 20000,
+"iva": "no",
+"fuente": "Andrés ($17.000–20.000)",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "repisa_m",
+"nombre": "Repisa de pino 8x4 cm (por metro)",
+"und": "m",
+"tipo": "material",
+"precio": 6667,
+"iva": "no",
+"fuente": "Repisa $20.000 / 3 m",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "eucalipto",
+"nombre": "Pilote eucalipto inmunizado Ø10–12 cm (por metro)",
+"und": "m",
+"tipo": "material",
+"precio": 10000,
+"iva": "no",
+"fuente": "Poste 2,4 m ≈ $24.000 (2021 ajustado)",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "pino_m",
+"nombre": "Pino inmunizado 2x4\" (por metro)",
+"und": "m",
+"tipo": "material",
+"precio": 9000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "tabla",
+"nombre": "Tabla burra 25 cm",
+"und": "und",
+"tipo": "material",
+"precio": 31000,
+"iva": "no",
+"fuente": "Ferretería Industrial-izada",
+"fecha": "2026-10-29",
+"est": false
+},
+{
+"id": "polin",
+"nombre": "Polín (parales)",
+"und": "und",
+"tipo": "material",
+"precio": 12500,
+"iva": "no",
+"fuente": "Ferretería Industrial-izada",
+"fecha": "2026-10-29",
+"est": false
+},
+{
+"id": "osb",
+"nombre": "Tablero OSB 18 mm 1,22x2,44",
+"und": "und",
+"tipo": "material",
+"precio": 125000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "fibro14",
+"nombre": "Placa fibrocemento 14 mm 1,22x2,44",
+"und": "und",
+"tipo": "material",
+"precio": 140700,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-08-30",
+"est": false
+},
+{
+"id": "fibro20",
+"nombre": "Placa fibrocemento 20 mm 1,22x2,44",
+"und": "und",
+"tipo": "material",
+"precio": 205000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "fibro8",
+"nombre": "Placa fibrocemento 8 mm 1,22x2,44",
+"und": "und",
+"tipo": "material",
+"precio": 83900,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "machi_pino",
+"nombre": "Machimbre de pino",
+"und": "m²",
+"tipo": "material",
+"precio": 45000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "sapan",
+"nombre": "Tablilla / revestimiento en sapán",
+"und": "m²",
+"tipo": "material",
+"precio": 95000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "teca_rev",
+"nombre": "Tablilla / revestimiento en teca",
+"und": "m²",
+"tipo": "material",
+"precio": 115000,
+"iva": "incl",
+"fuente": "Sandra – Pisos & Maderas (deck 8 cm)",
+"fecha": "2026-09-24",
+"est": false
+},
+{
+"id": "machi_teca_piso",
+"nombre": "Machimbre teca piso 10x1,9",
+"und": "m²",
+"tipo": "material",
+"precio": 125000,
+"iva": "no",
+"fuente": "Sandra – Pisos & Maderas",
+"fecha": "2026-09-24",
+"est": false
+},
+{
+"id": "machi_teca_techo",
+"nombre": "Machimbre teca techo 8x1,1",
+"und": "m²",
+"tipo": "material",
+"precio": 75000,
+"iva": "no",
+"fuente": "Sandra – Pisos & Maderas",
+"fecha": "2026-07-03",
+"est": false
+},
+{
+"id": "deck_teca",
+"nombre": "Deck teca 8 cm cuatro filos",
+"und": "m²",
+"tipo": "material",
+"precio": 100000,
+"iva": "no",
+"fuente": "Gustavo – Mega Teka",
+"fecha": "2026-09-25",
+"est": false
+},
+{
+"id": "sapan_viga",
+"nombre": "Sapán aserrado para estructura (por metro, 6x12 cm)",
+"und": "m",
+"tipo": "material",
+"precio": 28000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "conector",
+"nombre": "Conectores metálicos y tornillería para madera (poner valor del proyecto)",
+"und": "glb",
+"tipo": "material",
+"precio": 0,
+"iva": "incl",
+"fuente": "Global por proyecto",
+"fecha": "2026-11-21",
+"est": false
+},
+{
+"id": "tornillo_madera",
+"nombre": "Tornillo para madera (caja 100)",
+"und": "caja",
+"tipo": "material",
+"precio": 18000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "puntilla",
+"nombre": "Puntilla 2½\" caja 400 g",
+"und": "caja",
+"tipo": "material",
+"precio": 5000,
+"iva": "incl",
+"fuente": "Ferretería Industrial-izada",
+"fecha": "2026-10-29",
+"est": false
+},
+{
+"id": "inmunizante",
+"nombre": "Inmunizante para cortes (galón)",
+"und": "galón",
+"tipo": "material",
+"precio": 56900,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-07-15",
+"est": false
+},
+{
+"id": "sellador_nitro",
+"nombre": "Sellador nitro (galón)",
+"und": "galón",
+"tipo": "material",
+"precio": 85000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "laca",
+"nombre": "Laca / barniz (galón)",
+"und": "galón",
+"tipo": "material",
+"precio": 110000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "thinner",
+"nombre": "Thinner (galón)",
+"und": "galón",
+"tipo": "material",
+"precio": 30000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "aceite_teca",
+"nombre": "Aceite deshidratado inmunizante y humectante (teka) 1 gal",
+"und": "galón",
+"tipo": "material",
+"precio": 141455,
+"iva": "no",
+"fuente": "Homecenter (excluido de IVA)",
+"fecha": "2026-10-07",
+"est": false
+},
+{
+"id": "protector_uv",
+"nombre": "Protector para madera con filtro UV (galón)",
+"und": "galón",
+"tipo": "material",
+"precio": 130000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "gas_soplete",
+"nombre": "Gas para soplete (cilindro pequeño)",
+"und": "und",
+"tipo": "material",
+"precio": 25000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "drywall",
+"nombre": "Placa de yeso ST 1/2\" 1,22x2,44",
+"und": "und",
+"tipo": "material",
+"precio": 44200,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2025-04-18",
+"est": false
+},
+{
+"id": "superboard",
+"nombre": "Placa fibrocemento 8 mm (muro exterior)",
+"und": "und",
+"tipo": "material",
+"precio": 83900,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "paral",
+"nombre": "Paral / canal galvanizado cal. 26 x 2,44",
+"und": "und",
+"tipo": "material",
+"precio": 9500,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "omega",
+"nombre": "Omega cal. 0,35 x 2,44",
+"und": "und",
+"tipo": "material",
+"precio": 4500,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2025-04-18",
+"est": false
+},
+{
+"id": "vigueta_dw",
+"nombre": "Vigueta cal. 0,35 x 2,44",
+"und": "und",
+"tipo": "material",
+"precio": 4500,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2025-05-13",
+"est": false
+},
+{
+"id": "angulo_dw",
+"nombre": "Ángulo 20x20 x 2,44",
+"und": "und",
+"tipo": "material",
+"precio": 2200,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2025-04-18",
+"est": false
+},
+{
+"id": "tornillo_dw",
+"nombre": "Tornillo drywall / fibrocemento (caja 100)",
+"und": "caja",
+"tipo": "material",
+"precio": 9000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "masilla",
+"nombre": "Masilla Supermastick 28 kg",
+"und": "und",
+"tipo": "material",
+"precio": 54810,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2025-07-17",
+"est": false
+},
+{
+"id": "cinta_papel",
+"nombre": "Cinta de papel para juntas 75 m",
+"und": "und",
+"tipo": "material",
+"precio": 9000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "frescasa",
+"nombre": "Frescasa Eco 2½\" rollo 17,8 m²",
+"und": "rollo",
+"tipo": "material",
+"precio": 205600,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-07-31",
+"est": false
+},
+{
+"id": "barrera",
+"nombre": "Barrera de humedad / membrana respirable (m²)",
+"und": "m²",
+"tipo": "material",
+"precio": 9000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "pvc_cielo",
+"nombre": "Cielo raso PVC (m²)",
+"und": "m²",
+"tipo": "material",
+"precio": 32000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "cielo_metal",
+"nombre": "Cielo raso metálico lineal (m²)",
+"und": "m²",
+"tipo": "material",
+"precio": 95000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "aislante_piso",
+"nombre": "Aislamiento térmico bajo piso (poliestireno 1\", m²)",
+"und": "m²",
+"tipo": "material",
+"precio": 22000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "teja_fibro",
+"nombre": "Teja fibrocemento P7 #10 3,05x0,92",
+"und": "und",
+"tipo": "material",
+"precio": 62900,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "teja_metal",
+"nombre": "Teja metálica trapezoidal cal. 28 (m²)",
+"und": "m²",
+"tipo": "material",
+"precio": 38000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "teja_termo",
+"nombre": "Teja termoacústica (m² útil)",
+"und": "m²",
+"tipo": "material",
+"precio": 62000,
+"iva": "incl",
+"fuente": "Termogreca N8 Homecenter $120.500 / 1,95 m² útil",
+"fecha": "2026-07-31",
+"est": true
+},
+{
+"id": "teja_upvc",
+"nombre": "Teja UPVC / Techoline 2x0,95 (1,55 m² útil)",
+"und": "und",
+"tipo": "material",
+"precio": 53010,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-08-30",
+"est": false
+},
+{
+"id": "teja_barro",
+"nombre": "Teja de barro",
+"und": "und",
+"tipo": "material",
+"precio": 2800,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "manto",
+"nombre": "Manto asfáltico 3 mm rollo 10 m²",
+"und": "rollo",
+"tipo": "material",
+"precio": 236900,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "imprimante",
+"nombre": "Imprimante asfáltico (galón)",
+"und": "galón",
+"tipo": "material",
+"precio": 45000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "caballete",
+"nombre": "Caballete (und)",
+"und": "und",
+"tipo": "material",
+"precio": 32000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "flanche",
+"nombre": "Flanche lámina galvanizada 0,43 mm x 2,44",
+"und": "und",
+"tipo": "material",
+"precio": 32900,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "canal",
+"nombre": "Canal en lámina galvanizada (m)",
+"und": "m",
+"tipo": "material",
+"precio": 38000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "bajante",
+"nombre": "Bajante PVC 3\" aguas lluvias (m)",
+"und": "m",
+"tipo": "material",
+"precio": 12000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "gancho_teja",
+"nombre": "Amarre / tornillo para teja",
+"und": "und",
+"tipo": "material",
+"precio": 900,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "vidrio_lam",
+"nombre": "Vidrio laminado 4+4 (m²)",
+"und": "m²",
+"tipo": "material",
+"precio": 180000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "estuco",
+"nombre": "Estuco plástico 5 gal (30 kg)",
+"und": "cuñete",
+"tipo": "material",
+"precio": 95900,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "vinilo1",
+"nombre": "Vinilo tipo 1 interior (galón)",
+"und": "galón",
+"tipo": "material",
+"precio": 79900,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-08-12",
+"est": false
+},
+{
+"id": "vinilo2",
+"nombre": "Vinilo tipo 2 (galón)",
+"und": "galón",
+"tipo": "material",
+"precio": 45000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "koraza",
+"nombre": "Koraza (galón)",
+"und": "galón",
+"tipo": "material",
+"precio": 152900,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "antihongos",
+"nombre": "Pintura antihongos para baños (galón)",
+"und": "galón",
+"tipo": "material",
+"precio": 110000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "sellante_lad",
+"nombre": "Hidrófugo / sellante para ladrillo (galón)",
+"und": "galón",
+"tipo": "material",
+"precio": 70000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "lija",
+"nombre": "Lija (pliego)",
+"und": "und",
+"tipo": "material",
+"precio": 2500,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "impermeab",
+"nombre": "Impermeabilizante integral (kg)",
+"und": "kg",
+"tipo": "material",
+"precio": 9000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "ceramica",
+"nombre": "Cerámica / porcelanato (m²)",
+"und": "m²",
+"tipo": "material",
+"precio": 45000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "ceramica_pared",
+"nombre": "Cerámica pared 20x30",
+"und": "m²",
+"tipo": "material",
+"precio": 27900,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "pegante",
+"nombre": "Pegante cerámico 25 kg",
+"und": "bulto",
+"tipo": "material",
+"precio": 28170,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2025-07-17",
+"est": false
+},
+{
+"id": "pegante_porc",
+"nombre": "Pegante porcelanato 25 kg",
+"und": "bulto",
+"tipo": "material",
+"precio": 39900,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2025-07-17",
+"est": false
+},
+{
+"id": "boquilla",
+"nombre": "Boquilla 2 kg",
+"und": "und",
+"tipo": "material",
+"precio": 16900,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-08-31",
+"est": false
+},
+{
+"id": "laminado",
+"nombre": "Piso laminado 8 mm (m²)",
+"und": "m²",
+"tipo": "material",
+"precio": 55000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "wpc_piso",
+"nombre": "Piso WPC / SPC click (m²)",
+"und": "m²",
+"tipo": "material",
+"precio": 85000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "vinilo_piso",
+"nombre": "Piso vinílico click (m²)",
+"und": "m²",
+"tipo": "material",
+"precio": 65000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "espuma",
+"nombre": "Espuma niveladora para piso flotante (m²)",
+"und": "m²",
+"tipo": "material",
+"precio": 4500,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "guardaescoba",
+"nombre": "Guardaescoba (m)",
+"und": "m",
+"tipo": "material",
+"precio": 9000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "impermeab_flex",
+"nombre": "Impermeabilizante flexible para zona húmeda (galón)",
+"und": "galón",
+"tipo": "material",
+"precio": 120000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "endurecedor",
+"nombre": "Endurecedor / mortero de piso (kg)",
+"und": "kg",
+"tipo": "material",
+"precio": 2500,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "tubo_presion_1_2",
+"nombre": "Tubo presión PVC 1/2\" x 6 m",
+"und": "und",
+"tipo": "material",
+"precio": 21800,
+"iva": "incl",
+"fuente": "Homecenter $10.900 x 3 m",
+"fecha": "2025-04-15",
+"est": true
+},
+{
+"id": "tubo_presion_1",
+"nombre": "Tubo presión PVC 1\"",
+"und": "m",
+"tipo": "material",
+"precio": 4000,
+"iva": "incl",
+"fuente": "Ferretería Industrial-izada",
+"fecha": "2026-10-03",
+"est": false
+},
+{
+"id": "accesorio_pvc",
+"nombre": "Accesorios PVC presión (codo, tee, adaptador)",
+"und": "und",
+"tipo": "material",
+"precio": 1500,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "soldadura_pvc",
+"nombre": "Soldadura PVC 1/64 gl",
+"und": "und",
+"tipo": "material",
+"precio": 8500,
+"iva": "incl",
+"fuente": "Los Pachos",
+"fecha": "2026-01-21",
+"est": false
+},
+{
+"id": "limpiador_pvc",
+"nombre": "Limpiador PVC 1/64",
+"und": "und",
+"tipo": "material",
+"precio": 7000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "tubo_cpvc",
+"nombre": "Tubo CPVC 1/2\" agua caliente (m)",
+"und": "m",
+"tipo": "material",
+"precio": 6500,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "tubo_san2",
+"nombre": "Tubo sanitario PVC 2\" (m)",
+"und": "m",
+"tipo": "material",
+"precio": 8983,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "tubo_san3",
+"nombre": "Tubo sanitario PVC 3\" (m)",
+"und": "m",
+"tipo": "material",
+"precio": 9967,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "tubo_san4",
+"nombre": "Tubo sanitario PVC 4\" (m)",
+"und": "m",
+"tipo": "material",
+"precio": 11667,
+"iva": "no",
+"fuente": "Ferretería Industrial-izada",
+"fecha": "2026-04-20",
+"est": false
+},
+{
+"id": "accesorio_san",
+"nombre": "Accesorio sanitario (codo, yee) 3\"–4\"",
+"und": "und",
+"tipo": "material",
+"precio": 19900,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "registro",
+"nombre": "Registro PCP 1\"",
+"und": "und",
+"tipo": "material",
+"precio": 25000,
+"iva": "incl",
+"fuente": "Ferretería Industrial-izada",
+"fecha": "2026-10-03",
+"est": false
+},
+{
+"id": "tanque_1000",
+"nombre": "Tanque 1000 L",
+"und": "und",
+"tipo": "material",
+"precio": 530000,
+"iva": "incl",
+"fuente": "Ferretería Industrial-izada",
+"fecha": "2026-10-01",
+"est": false
+},
+{
+"id": "septico",
+"nombre": "Tanque séptico 500 L Imhoff",
+"und": "und",
+"tipo": "material",
+"precio": 749900,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-08-30",
+"est": false
+},
+{
+"id": "filtro_anaer",
+"nombre": "Filtro anaerobio 500 L",
+"und": "und",
+"tipo": "material",
+"precio": 633900,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-07-31",
+"est": false
+},
+{
+"id": "trampa",
+"nombre": "Trampa de grasas prefabricada",
+"und": "und",
+"tipo": "material",
+"precio": 280000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "geotextil",
+"nombre": "Geotextil no tejido (m²)",
+"und": "m²",
+"tipo": "material",
+"precio": 4500,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "tubo_perf",
+"nombre": "Tubo perforado drenaje 4\" (m)",
+"und": "m",
+"tipo": "material",
+"precio": 15000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "sanitario",
+"nombre": "Sanitario Manantial Pro",
+"und": "und",
+"tipo": "material",
+"precio": 349900,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-08-30",
+"est": false
+},
+{
+"id": "lavamanos",
+"nombre": "Lavamanos vessel",
+"und": "und",
+"tipo": "material",
+"precio": 169900,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-08-30",
+"est": false
+},
+{
+"id": "grif_lvm",
+"nombre": "Grifería lavamanos alta",
+"und": "und",
+"tipo": "material",
+"precio": 102900,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-08-30",
+"est": false
+},
+{
+"id": "grif_ducha",
+"nombre": "Grifería ducha mezcladora",
+"und": "und",
+"tipo": "material",
+"precio": 262900,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-08-30",
+"est": false
+},
+{
+"id": "lavaplatos",
+"nombre": "Lavaplatos de bajo poner 40x34",
+"und": "und",
+"tipo": "material",
+"precio": 109900,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-08-30",
+"est": false
+},
+{
+"id": "grif_cocina",
+"nombre": "Grifería cocina",
+"und": "und",
+"tipo": "material",
+"precio": 150000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "lavadero",
+"nombre": "Lavadero prefabricado",
+"und": "und",
+"tipo": "material",
+"precio": 280000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "incrustaciones",
+"nombre": "Kit accesorios de baño 3 piezas",
+"und": "und",
+"tipo": "material",
+"precio": 89900,
+"iva": "incl",
+"fuente": "Homecenter",
+"fecha": "2026-08-30",
+"est": false
+},
+{
+"id": "espejo",
+"nombre": "Espejo de baño",
+"und": "und",
+"tipo": "material",
+"precio": 150000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "llave_jardin",
+"nombre": "Llave de jardín 1/2\"",
+"und": "und",
+"tipo": "material",
+"precio": 15000,
+"iva": "incl",
+"fuente": "Los Pachos (llave cromada)",
+"fecha": "2026-01-21",
+"est": false
+},
+{
+"id": "calentador",
+"nombre": "Calentador de paso a gas 10 L",
+"und": "und",
+"tipo": "material",
+"precio": 900000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "desague",
+"nombre": "Desagüe / sifón con rejilla",
+"und": "und",
+"tipo": "material",
+"precio": 25000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "acople",
+"nombre": "Acople flexible",
+"und": "und",
+"tipo": "material",
+"precio": 9000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "tubo_gas",
+"nombre": "Tubería gas PE-AL-PE / cobre (m)",
+"und": "m",
+"tipo": "material",
+"precio": 12000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "regulador",
+"nombre": "Regulador, válvulas y manguera para cilindro",
+"und": "und",
+"tipo": "material",
+"precio": 120000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "cable12",
+"nombre": "Cable THHN #12 (m)",
+"und": "m",
+"tipo": "material",
+"precio": 2579,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "cable14",
+"nombre": "Alambre #14 (m)",
+"und": "m",
+"tipo": "material",
+"precio": 1649,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "cable8",
+"nombre": "Cable aislado #8 (m)",
+"und": "m",
+"tipo": "material",
+"precio": 6545,
+"iva": "incl",
+"fuente": "CM Red (+IVA)",
+"fecha": "2026-03-07",
+"est": false
+},
+{
+"id": "conduit",
+"nombre": "Tubo conduit PVC 1/2\" x 3 m",
+"und": "und",
+"tipo": "material",
+"precio": 4500,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "caja_el",
+"nombre": "Caja eléctrica 2x4 / octagonal",
+"und": "und",
+"tipo": "material",
+"precio": 1500,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "toma",
+"nombre": "Toma doble con polo a tierra",
+"und": "und",
+"tipo": "material",
+"precio": 12000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "interruptor",
+"nombre": "Interruptor sencillo",
+"und": "und",
+"tipo": "material",
+"precio": 7400,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "roseta",
+"nombre": "Plafón / roseta",
+"und": "und",
+"tipo": "material",
+"precio": 6000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "tablero",
+"nombre": "Tablero monofásico 4 circuitos",
+"und": "und",
+"tipo": "material",
+"precio": 33320,
+"iva": "incl",
+"fuente": "CM Red (+IVA)",
+"fecha": "2026-03-07",
+"est": false
+},
+{
+"id": "breaker",
+"nombre": "Breaker monofásico 20 A",
+"und": "und",
+"tipo": "material",
+"precio": 16660,
+"iva": "incl",
+"fuente": "CM Red (+IVA)",
+"fecha": "2026-03-07",
+"est": false
+},
+{
+"id": "luminaria",
+"nombre": "Luminaria LED panel / bala",
+"und": "und",
+"tipo": "material",
+"precio": 45000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "varilla_cu",
+"nombre": "Varilla de cobre 2,4 m + conector",
+"und": "und",
+"tipo": "material",
+"precio": 85000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "cable_tv",
+"nombre": "Cable UTP cat. 6 (m)",
+"und": "m",
+"tipo": "material",
+"precio": 2500,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "polisombra",
+"nombre": "Polisombra 2,10 m",
+"und": "m",
+"tipo": "material",
+"precio": 4000,
+"iva": "incl",
+"fuente": "Los Pachos",
+"fecha": "2026-01-21",
+"est": false
+},
+{
+"id": "zinc",
+"nombre": "Lámina de zinc ondulada 2,13x0,80",
+"und": "und",
+"tipo": "material",
+"precio": 32900,
+"iva": "incl",
+"fuente": "Web Homecenter 21/11",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "alambre_puas",
+"nombre": "Alambre de púas (m)",
+"und": "m",
+"tipo": "material",
+"precio": 900,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "grama",
+"nombre": "Grama en tapete (m²)",
+"und": "m²",
+"tipo": "material",
+"precio": 9000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "tierra",
+"nombre": "Tierra negra (m³)",
+"und": "m³",
+"tipo": "material",
+"precio": 90000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "plastico",
+"nombre": "Plástico negro 4 m cal. 6 (m)",
+"und": "m",
+"tipo": "material",
+"precio": 7500,
+"iva": "incl",
+"fuente": "Los Pachos",
+"fecha": "2026-09-07",
+"est": false
+},
+{
+"id": "mezcladora",
+"nombre": "Alquiler mezcladora 1 bulto",
+"und": "día",
+"tipo": "equipo",
+"precio": 70000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "vibrador",
+"nombre": "Alquiler vibrador",
+"und": "día",
+"tipo": "equipo",
+"precio": 45000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "andamio",
+"nombre": "Alquiler andamio torre 4 m",
+"und": "día",
+"tipo": "equipo",
+"precio": 50000,
+"iva": "incl",
+"fuente": "Geconexión ($40.000–60.000/día)",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "canguro",
+"nombre": "Alquiler canguro / vibrocompactador",
+"und": "día",
+"tipo": "equipo",
+"precio": 120000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "retro",
+"nombre": "Retroexcavadora con operador",
+"und": "hora",
+"tipo": "equipo",
+"precio": 180000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "volqueta",
+"nombre": "Volqueta (viaje 7 m³)",
+"und": "viaje",
+"tipo": "transporte",
+"precio": 450000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "cortadora",
+"nombre": "Alquiler cortadora de concreto",
+"und": "día",
+"tipo": "equipo",
+"precio": 90000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+},
+{
+"id": "martillo",
+"nombre": "Alquiler martillo demoledor",
+"und": "día",
+"tipo": "equipo",
+"precio": 90000,
+"iva": "incl",
+"fuente": "Estimado Claude",
+"fecha": "2026-11-21",
+"est": true
+}
+],
+"cargos": [
+{
+"id": "maestro",
+"nombre": "Maestro",
+"jornal": 180000
+},
+{
+"id": "oficial",
+"nombre": "Oficial",
+"jornal": 150000
+},
+{
+"id": "carpintero",
+"nombre": "Carpintero",
+"jornal": 150000
+},
+{
+"id": "ayudante",
+"nombre": "Ayudante",
+"jornal": 120000
+}
+],
+"cuadrillas": [
+{
+"id": "OA",
+"nombre": "1 oficial + 1 ayudante",
+"miembros": [
+{
+"cargo": "oficial",
+"cant": 1
+},
+{
+"cargo": "ayudante",
+"cant": 1
+}
+]
+},
+{
+"id": "CA",
+"nombre": "1 carpintero + 1 ayudante",
+"miembros": [
+{
+"cargo": "carpintero",
+"cant": 1
+},
+{
+"cargo": "ayudante",
+"cant": 1
+}
+]
+},
+{
+"id": "O2A",
+"nombre": "1 oficial + 2 ayudantes",
+"miembros": [
+{
+"cargo": "oficial",
+"cant": 1
+},
+{
+"cargo": "ayudante",
+"cant": 2
+}
+]
+},
+{
+"id": "O3A",
+"nombre": "1 oficial + 3 ayudantes (concretos)",
+"miembros": [
+{
+"cargo": "oficial",
+"cant": 1
+},
+{
+"cargo": "ayudante",
+"cant": 3
+}
+]
+},
+{
+"id": "A1",
+"nombre": "1 ayudante",
+"miembros": [
+{
+"cargo": "ayudante",
+"cant": 1
+}
+]
+},
+{
+"id": "A2",
+"nombre": "2 ayudantes",
+"miembros": [
+{
+"cargo": "ayudante",
+"cant": 2
+}
+]
+},
+{
+"id": "O1",
+"nombre": "1 oficial",
+"miembros": [
+{
+"cargo": "oficial",
+"cant": 1
+}
+]
+},
+{
+"id": "C1",
+"nombre": "1 carpintero",
+"miembros": [
+{
+"cargo": "carpintero",
+"cant": 1
+}
+]
+}
+],
+"apus": [
+{
+"id": "B-CON3000M",
+"cod": "CON3000M",
+"cap": "Básicos",
+"nombre": "Concreto 3000 psi con mezcladora",
+"und": "m³",
+"basico": true,
+"comp": [
+{
+"tipo": "mat",
+"ins": "cemento",
+"cant": 7,
+"desp": 3
+},
+{
+"tipo": "mat",
+"ins": "mixto",
+"cant": 1.05,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "agua",
+"cant": 0.2,
+"desp": 0
+},
+{
+"tipo": "eq",
+"ins": "mezcladora",
+"cant": 0.16666666666666666
+},
+{
+"tipo": "eq",
+"ins": "vibrador",
+"cant": 0.16666666666666666
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 6,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Dosificación 350 kg/m³; rend. estimado",
+"notas": "",
+"origen": null
+},
+{
+"id": "B-CON3000A",
+"cod": "CON3000A",
+"cap": "Básicos",
+"nombre": "Concreto 3000 psi mezclado a mano",
+"und": "m³",
+"basico": true,
+"comp": [
+{
+"tipo": "mat",
+"ins": "cemento",
+"cant": 7.5,
+"desp": 3
+},
+{
+"tipo": "mat",
+"ins": "mixto",
+"cant": 1.05,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "agua",
+"cant": 0.2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 3,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Sin mezcladora: más cemento por control de mezcla; rend. estimado",
+"notas": "",
+"origen": null
+},
+{
+"id": "B-CON3000P",
+"cod": "CON3000P",
+"cap": "Básicos",
+"nombre": "Concreto 3000 psi premezclado (colocado)",
+"und": "m³",
+"basico": true,
+"comp": [
+{
+"tipo": "mat",
+"ins": "premezclado",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "eq",
+"ins": "vibrador",
+"cant": 0.08333333333333333
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 12,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null
+},
+{
+"id": "B-CON2000",
+"cod": "CON2000",
+"cap": "Básicos",
+"nombre": "Concreto 2000 psi mezclado a mano",
+"und": "m³",
+"basico": true,
+"comp": [
+{
+"tipo": "mat",
+"ins": "cemento",
+"cant": 5.5,
+"desp": 3
+},
+{
+"tipo": "mat",
+"ins": "mixto",
+"cant": 1.05,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "agua",
+"cant": 0.18,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 3.5,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null
+},
+{
+"id": "B-MORT14",
+"cod": "MORT14",
+"cap": "Básicos",
+"nombre": "Mortero 1:4",
+"und": "m³",
+"basico": true,
+"comp": [
+{
+"tipo": "mat",
+"ins": "cemento",
+"cant": 8,
+"desp": 3
+},
+{
+"tipo": "mat",
+"ins": "arena",
+"cant": 1.15,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "agua",
+"cant": 0.25,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A1",
+"rend": 3,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null
+},
+{
+"id": "B-MORT13",
+"cod": "MORT13",
+"cap": "Básicos",
+"nombre": "Mortero 1:3 impermeabilizado",
+"und": "m³",
+"basico": true,
+"comp": [
+{
+"tipo": "mat",
+"ins": "cemento",
+"cant": 10,
+"desp": 3
+},
+{
+"tipo": "mat",
+"ins": "arena",
+"cant": 1.1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "impermeab",
+"cant": 5,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "agua",
+"cant": 0.25,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A1",
+"rend": 3,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null
+},
+{
+"id": "B-FORM",
+"cod": "FORM",
+"cap": "Básicos",
+"nombre": "Formaleta en madera (m² de contacto, 4 usos)",
+"und": "m²",
+"basico": true,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tabla",
+"cant": 0.35,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "polin",
+"cant": 0.15,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "puntilla",
+"cant": 0.15,
+"desp": 0
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 0,
+"nota": "La mano de obra va en cada actividad"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "La mano de obra de formaleta va en cada actividad.",
+"origen": null
+},
+{
+"id": "A-01.01",
+"cod": "01.01",
+"cap": "01 Diseños, estudios y trámites",
+"nombre": "Levantamiento topográfico",
+"und": "glb",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 1500000,
+"nota": "Valor global; ajustar por proyecto"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Honorarios estimados. 01.08 no incluye expensas ni impuestos.",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-01.02",
+"cod": "01.02",
+"cap": "01 Diseños, estudios y trámites",
+"nombre": "Estudio de suelos",
+"und": "glb",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 3500000,
+"nota": "Valor global; ajustar por proyecto"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Honorarios estimados. 01.08 no incluye expensas ni impuestos.",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-01.03",
+"cod": "01.03",
+"cap": "01 Diseños, estudios y trámites",
+"nombre": "Diseño arquitectónico",
+"und": "glb",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 6000000,
+"nota": "Valor global; ajustar por proyecto"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Honorarios estimados. 01.08 no incluye expensas ni impuestos.",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-01.04",
+"cod": "01.04",
+"cap": "01 Diseños, estudios y trámites",
+"nombre": "Diseño estructural",
+"und": "glb",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 3000000,
+"nota": "Valor global; ajustar por proyecto"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Honorarios estimados. 01.08 no incluye expensas ni impuestos.",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-01.05",
+"cod": "01.05",
+"cap": "01 Diseños, estudios y trámites",
+"nombre": "Diseño hidrosanitario",
+"und": "glb",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 1200000,
+"nota": "Valor global; ajustar por proyecto"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Honorarios estimados. 01.08 no incluye expensas ni impuestos.",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-01.06",
+"cod": "01.06",
+"cap": "01 Diseños, estudios y trámites",
+"nombre": "Diseño eléctrico y datos",
+"und": "glb",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 1200000,
+"nota": "Valor global; ajustar por proyecto"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Honorarios estimados. 01.08 no incluye expensas ni impuestos.",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-01.07",
+"cod": "01.07",
+"cap": "01 Diseños, estudios y trámites",
+"nombre": "Planos y detalles de construcción",
+"und": "glb",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 1500000,
+"nota": "Valor global; ajustar por proyecto"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Honorarios estimados. 01.08 no incluye expensas ni impuestos.",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-01.08",
+"cod": "01.08",
+"cap": "01 Diseños, estudios y trámites",
+"nombre": "Gestión de licencia de construcción (documentos y trámite)",
+"und": "glb",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 2500000,
+"nota": "Valor global; ajustar por proyecto"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Honorarios estimados. 01.08 no incluye expensas ni impuestos.",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-02.01",
+"cod": "02.01",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Limpieza y desmonte del terreno",
+"und": "m²",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A2",
+"rend": 60,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-02.02",
+"cod": "02.02",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Localización, trazado y replanteo",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tabla",
+"cant": 0.01,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "puntilla",
+"cant": 0.005,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 100,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Hilo, estacas y cal incluidos en herramienta",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-02.03",
+"cod": "02.03",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Campamento / resguardo de materiales en madera y teja",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "polin",
+"cant": 0.6,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "tabla",
+"cant": 0.8,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "zinc",
+"cant": 0.7,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "puntilla",
+"cant": 0.2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 6,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-02.04",
+"cod": "02.04",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Cerramiento provisional en polisombra y postes de madera h=2,10",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "polisombra",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "eucalipto",
+"cant": 0.9,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "puntilla",
+"cant": 0.05,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-02.05",
+"cod": "02.05",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Cerramiento provisional en lámina de zinc h=2,40",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "zinc",
+"cant": 0.8,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "polin",
+"cant": 0.5,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "tabla",
+"cant": 0.35,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "puntilla",
+"cant": 0.1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 15,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-02.06",
+"cod": "02.06",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Instalación provisional de agua",
+"und": "glb",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tubo_presion_1_2",
+"cant": 3,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "accesorio_pvc",
+"cant": 6,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "registro",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "soldadura_pvc",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 250000,
+"nota": "Instalación global"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-02.07",
+"cod": "02.07",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Instalación provisional de energía",
+"und": "glb",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "cable12",
+"cant": 30,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "breaker",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "toma",
+"cant": 2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 350000,
+"nota": "Instalación global; acometida provisional con el operador aparte"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-02.08",
+"cod": "02.08",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Baño provisional",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 900000,
+"nota": "Caseta con sanitario o alquiler de baño portátil"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-02.09",
+"cod": "02.09",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Demolición de muro en bloque o ladrillo",
+"und": "m²",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A2",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-02.10",
+"cod": "02.10",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Demolición de muro en concreto",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "eq",
+"ins": "martillo",
+"cant": 0.25
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O2A",
+"rend": 4,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-02.11",
+"cod": "02.11",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Demolición de columnas y vigas en concreto",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "eq",
+"ins": "martillo",
+"cant": 0.6666666666666666
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O2A",
+"rend": 1.5,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-02.12",
+"cod": "02.12",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Demolición de placa de concreto",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "eq",
+"ins": "martillo",
+"cant": 0.5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O2A",
+"rend": 2,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-02.13",
+"cod": "02.13",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Demolición de escalera en concreto",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "eq",
+"ins": "martillo",
+"cant": 0.6666666666666666
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O2A",
+"rend": 1.5,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-02.14",
+"cod": "02.14",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Desmonte de cubierta",
+"und": "m²",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 25,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-02.15",
+"cod": "02.15",
+"cap": "02 Preliminares y provisionales",
+"nombre": "Desmonte de ventanas y puertas",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 6,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-03.01",
+"cod": "03.01",
+"cap": "03 Movimiento de tierras",
+"nombre": "Descapote manual e=0,20–0,30 m con retiro",
+"und": "m²",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A2",
+"rend": 18,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Incluye retiro dentro del lote",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-03.02",
+"cod": "03.02",
+"cap": "03 Movimiento de tierras",
+"nombre": "Excavación manual en material común",
+"und": "m³",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A1",
+"rend": 2.7,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Rend. con base en Presupuestador 2024 (h/und) a jornada de 8 h (3 h/m³)",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-03.03",
+"cod": "03.03",
+"cap": "03 Movimiento de tierras",
+"nombre": "Excavación manual en conglomerado / roca blanda",
+"und": "m³",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A1",
+"rend": 1.3,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-03.04",
+"cod": "03.04",
+"cap": "03 Movimiento de tierras",
+"nombre": "Excavación mecánica (retroexcavadora)",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "eq",
+"ins": "retro",
+"cant": 0.04
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 0,
+"nota": "Solo equipo"
+},
+"herr": 5,
+"est": true,
+"fuente": "≈ 25 m³/hora",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-03.05",
+"cod": "03.05",
+"cap": "03 Movimiento de tierras",
+"nombre": "Relleno compactado con material del sitio",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "eq",
+"ins": "canguro",
+"cant": 0.04
+},
+{
+"tipo": "mat",
+"ins": "agua",
+"cant": 0.1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A2",
+"rend": 25,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-03.06",
+"cod": "03.06",
+"cap": "03 Movimiento de tierras",
+"nombre": "Relleno en recebo compactado",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "recebo",
+"cant": 1.3,
+"desp": 0
+},
+{
+"tipo": "eq",
+"ins": "canguro",
+"cant": 0.04
+},
+{
+"tipo": "mat",
+"ins": "agua",
+"cant": 0.1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A2",
+"rend": 20,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Abundamiento 30 %",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-03.07",
+"cod": "03.07",
+"cap": "03 Movimiento de tierras",
+"nombre": "Mejoramiento de terreno (sobrexcavación y reemplazo)",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "recebo",
+"cant": 1.3,
+"desp": 0
+},
+{
+"tipo": "eq",
+"ins": "canguro",
+"cant": 0.05
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A2",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-03.08",
+"cod": "03.08",
+"cap": "03 Movimiento de tierras",
+"nombre": "Conformación y nivelación de terreno / terraceo",
+"und": "m²",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A2",
+"rend": 40,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-03.09",
+"cod": "03.09",
+"cap": "03 Movimiento de tierras",
+"nombre": "Retiro de sobrantes y escombros (cargue y transporte)",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "eq",
+"ins": "volqueta",
+"cant": 0.14285714285714285
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A2",
+"rend": 14,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Cargue manual; volqueta por viaje de 7 m³",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-03.10",
+"cod": "03.10",
+"cap": "03 Movimiento de tierras",
+"nombre": "Acarreo manual de materiales en lote con pendiente",
+"und": "m³",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "dias",
+"cuadrilla": "A1",
+"dias": 0.25,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Ajustar los días según distancia y pendiente",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-04.01",
+"cod": "04.01",
+"cap": "04 Cimentación",
+"nombre": "Concreto de limpieza 2000 psi e=0,05 m",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON2000",
+"cant": 0.05,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 40,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-04.02",
+"cod": "04.02",
+"cap": "04 Cimentación",
+"nombre": "Zapata en concreto 3000 psi (sin refuerzo)",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 1,
+"desp": 3
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 1.5,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 3,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Rend. con base en Presupuestador 2024 (h/und) a jornada de 8 h (8 h/m³); con formaleta lateral",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-04.03",
+"cod": "04.03",
+"cap": "04 Cimentación",
+"nombre": "Pedestal en concreto 3000 psi (sin refuerzo)",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 1,
+"desp": 3
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 8,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 1.2,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-04.04",
+"cod": "04.04",
+"cap": "04 Cimentación",
+"nombre": "Viga de cimentación / amarre en concreto 3000 psi (sin refuerzo)",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 1,
+"desp": 3
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 8,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 1.4,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Rend. con base en Presupuestador 2024 (h/und) a jornada de 8 h (23 h/m³ incl. formaleta)",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-04.05",
+"cod": "04.05",
+"cap": "04 Cimentación",
+"nombre": "Concreto ciclópeo 60/40",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.6,
+"desp": 3
+},
+{
+"tipo": "mat",
+"ins": "piedra",
+"cant": 0.45,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 3,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-04.06",
+"cod": "04.06",
+"cap": "04 Cimentación",
+"nombre": "Acero de refuerzo 60.000 psi (figurado y amarrado)",
+"und": "kg",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "acero",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "alambre",
+"cant": 0.03,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 200,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-04.07",
+"cod": "04.07",
+"cap": "04 Cimentación",
+"nombre": "Dado en concreto para poste o columna de madera",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.064,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 0.64,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 4,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Dado 0,40x0,40x0,40",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-04.08",
+"cod": "04.08",
+"cap": "04 Cimentación",
+"nombre": "Pilote en eucalipto inmunizado Ø10–12 cm, enterrado",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "eucalipto",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "inmunizante",
+"cant": 0.02,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "plastico",
+"cant": 0.2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 12,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Pilote enterrado; excavación y concreto de anclaje aparte",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-04.09",
+"cod": "04.09",
+"cap": "04 Cimentación",
+"nombre": "Platina y pernos de anclaje con anticorrosivo",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "platina",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "anticorrosivo",
+"cant": 0.02,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-04.10",
+"cod": "04.10",
+"cap": "04 Cimentación",
+"nombre": "Muro de contención en concreto reforzado 3000 psi (acero aparte)",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 1,
+"desp": 3
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 10,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "impermeab",
+"cant": 3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 1.2,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-04.11",
+"cod": "04.11",
+"cap": "04 Cimentación",
+"nombre": "Muro de contención en gavión",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "piedra",
+"cant": 1.15,
+"desp": 0
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 85000,
+"nota": "Canasta + llenado; canasta aparte si no la incluye"
+},
+"herr": 5,
+"est": true,
+"fuente": "Incluye malla de gavión en el valor del contratista",
+"notas": "Revisar: si se compra la canasta, agregarla como insumo",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-04.12",
+"cod": "04.12",
+"cap": "04 Cimentación",
+"nombre": "Muro de contención en concreto ciclópeo",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.6,
+"desp": 3
+},
+{
+"tipo": "mat",
+"ins": "piedra",
+"cant": 0.45,
+"desp": 0
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 6,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 2,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-04.13",
+"cod": "04.13",
+"cap": "04 Cimentación",
+"nombre": "Impermeabilización de cimientos (sobrecimiento)",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "imprimante",
+"cant": 0.15,
+"desp": 0
+},
+{
+"tipo": "bas",
+"apu": "B-MORT13",
+"cant": 0.01,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-05.01",
+"cod": "05.01",
+"cap": "05 Estructura en concreto",
+"nombre": "Placa de contrapiso en concreto 3000 psi e=0,10 m",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "plastico",
+"cant": 1.05,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Rend. con base en Presupuestador 2024 (h/und) a jornada de 8 h (2 h/m²) ajustado a cuadrilla de concreto",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-05.02",
+"cod": "05.02",
+"cap": "05 Estructura en concreto",
+"nombre": "Malla electrosoldada para placa",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "malla",
+"cant": 0.07092198581560284,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "alambre",
+"cant": 0.02,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 120,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-05.03",
+"cod": "05.03",
+"cap": "05 Estructura en concreto",
+"nombre": "Columna en concreto 3000 psi (sin refuerzo)",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 1,
+"desp": 3
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 10,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 1,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-05.04",
+"cod": "05.04",
+"cap": "05 Estructura en concreto",
+"nombre": "Viga aérea en concreto 3000 psi (sin refuerzo)",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 1,
+"desp": 3
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 8.5,
+"desp": 0
+},
+{
+"tipo": "eq",
+"ins": "andamio",
+"cant": 0.5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 1,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-05.05",
+"cod": "05.05",
+"cap": "05 Estructura en concreto",
+"nombre": "Columneta de confinamiento",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.015,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "acero",
+"cant": 4.5,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "alambre",
+"cant": 0.1,
+"desp": 0
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 0.5,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 6,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Rend. con base en Presupuestador 2024 (h/und) a jornada de 8 h (3 h/m)",
+"notas": "Incluye refuerzo 4 Ø3/8\" + flejes",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-05.06",
+"cod": "05.06",
+"cap": "05 Estructura en concreto",
+"nombre": "Viga / cinta de amarre sobre muro",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.0225,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "acero",
+"cant": 4.5,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "alambre",
+"cant": 0.1,
+"desp": 0
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 0.3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Rend. con base en Presupuestador 2024 (h/und) a jornada de 8 h (2,5 h/m)",
+"notas": "Incluye refuerzo",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-05.07",
+"cod": "05.07",
+"cap": "05 Estructura en concreto",
+"nombre": "Placa maciza de entrepiso e=0,10–0,12 m (sin refuerzo)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.11,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "eq",
+"ins": "vibrador",
+"cant": 0.02
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 12,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-05.08",
+"cod": "05.08",
+"cap": "05 Estructura en concreto",
+"nombre": "Placa fácil de entrepiso",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "bloquelosa",
+"cant": 4.87,
+"desp": 3
+},
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.05,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "malla",
+"cant": 0.07092198581560284,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 15,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Perfilería/viguetas de placa fácil aparte (06.03)",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-05.09",
+"cod": "05.09",
+"cap": "05 Estructura en concreto",
+"nombre": "Placa de entrepiso en steel deck / metaldeck",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "steeldeck",
+"cant": 1.05,
+"desp": 0
+},
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.09,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "malla",
+"cant": 0.07092198581560284,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 20,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-05.10",
+"cod": "05.10",
+"cap": "05 Estructura en concreto",
+"nombre": "Placa aligerada de entrepiso e=0,07 m (sin refuerzo)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "casetón",
+"cant": 0.6,
+"desp": 0
+},
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.12,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-05.11",
+"cod": "05.11",
+"cap": "05 Estructura en concreto",
+"nombre": "Escalera / pasos en concreto",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.06,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 0.6,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "acero",
+"cant": 2,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 4,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Rend. con base en Presupuestador 2024 (h/und) a jornada de 8 h (4 h/paso)",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-05.12",
+"cod": "05.12",
+"cap": "05 Estructura en concreto",
+"nombre": "Escalera en concreto 3000 psi (sin refuerzo)",
+"und": "m³",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 1,
+"desp": 3
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 9,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 0.9,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-06.01",
+"cod": "06.01",
+"cap": "06 Estructura metálica",
+"nombre": "Columna metálica en perfil (suministro e instalación)",
+"und": "kg",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "perfil_kg",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "soldadura_e",
+"cant": 0.02,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "anticorrosivo",
+"cant": 0.005,
+"desp": 0
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 3500,
+"nota": "Fabricación y montaje por kg"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-06.02",
+"cod": "06.02",
+"cap": "06 Estructura metálica",
+"nombre": "Viga metálica en perfil",
+"und": "kg",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "perfil_kg",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "soldadura_e",
+"cant": 0.02,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "anticorrosivo",
+"cant": 0.005,
+"desp": 0
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 3500,
+"nota": "Fabricación y montaje por kg"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-06.03",
+"cod": "06.03",
+"cap": "06 Estructura metálica",
+"nombre": "Vigueta metálica de entrepiso",
+"und": "kg",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "perfil_kg",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "soldadura_e",
+"cant": 0.02,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "anticorrosivo",
+"cant": 0.005,
+"desp": 0
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 3000,
+"nota": "Fabricación y montaje por kg"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-06.04",
+"cod": "06.04",
+"cap": "06 Estructura metálica",
+"nombre": "Unión atornillada con platinas y tornillos galvanizados",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "platina",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 12,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-06.05",
+"cod": "06.05",
+"cap": "06 Estructura metálica",
+"nombre": "Pintura anticorrosiva y esmalte para estructura",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "anticorrosivo",
+"cant": 0.06,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "esmalte",
+"cant": 0.06,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "thinner",
+"cant": 0.03,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "lija",
+"cant": 0.3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 25,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-07.01",
+"cod": "07.01",
+"cap": "07 Estructura en madera",
+"nombre": "Viga de entrepiso armada con 2, 3 o 4 repisas de pino 8×4 cm",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 3,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "tornillo_madera",
+"cant": 0.1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "inmunizante",
+"cant": 0.02,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 12,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Cantidad para 3 repisas por metro; cambiar a 2 o 4 según la sección",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-07.02",
+"cod": "07.02",
+"cap": "07 Estructura en madera",
+"nombre": "Entramado de entrepiso (viguetas) en pino inmunizado",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 2.2,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "tornillo_madera",
+"cant": 0.1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "inmunizante",
+"cant": 0.02,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 12,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Viguetas en repisa 8x4 a 0,45 m",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-07.03",
+"cod": "07.03",
+"cap": "07 Estructura en madera",
+"nombre": "Piso estructural en tablero (OSB / superboard 17 mm) sobre entramado",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "osb",
+"cant": 0.36,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "tornillo_madera",
+"cant": 0.25,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 25,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-07.04",
+"cod": "07.04",
+"cap": "07 Estructura en madera",
+"nombre": "Piso estructural en fibrocemento 14 mm sobre entramado",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "fibro14",
+"cant": 0.36,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "tornillo_dw",
+"cant": 0.3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 22,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-07.05",
+"cod": "07.05",
+"cap": "07 Estructura en madera",
+"nombre": "Piso estructural en fibrocemento 20 mm sobre entramado",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "fibro20",
+"cant": 0.36,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "tornillo_dw",
+"cant": 0.3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 18,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-07.06",
+"cod": "07.06",
+"cap": "07 Estructura en madera",
+"nombre": "Columna armada con 2, 3 o 4 repisas de pino 8×4 cm (global por columna)",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "repisa",
+"cant": 3,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "tornillo_madera",
+"cant": 0.3,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "inmunizante",
+"cant": 0.05,
+"desp": 0
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 60000,
+"nota": "Global por columna (armado y montaje)"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Ejemplo: columna de 3 repisas x 3 m; ajustar por proyecto",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-07.07",
+"cod": "07.07",
+"cap": "07 Estructura en madera",
+"nombre": "Entramado de muros en pino inmunizado",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 3.2,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "tornillo_madera",
+"cant": 0.15,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "inmunizante",
+"cant": 0.02,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-07.08",
+"cod": "07.08",
+"cap": "07 Estructura en madera",
+"nombre": "Estructura de cubierta en madera (vigas, correas o cerchas)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 3.5,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "tornillo_madera",
+"cant": 0.2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "inmunizante",
+"cant": 0.03,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-07.09",
+"cod": "07.09",
+"cap": "07 Estructura en madera",
+"nombre": "Herrajes y conectores metálicos para madera",
+"und": "glb",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "conector",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 0,
+"nota": "Instalación incluida en cada actividad"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Poner el valor global de conectores del proyecto",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-07.10",
+"cod": "07.10",
+"cap": "07 Estructura en madera",
+"nombre": "Inmunización / sellado de cortes en obra",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "inmunizante",
+"cant": 0.08,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "C1",
+"rend": 40,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-08.01",
+"cod": "08.01",
+"cap": "08 Muros y cerramientos",
+"nombre": "Muro en bloque #4 (e=0,10)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "bloque4",
+"cant": 13.5,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-MORT14",
+"cant": 0.012,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Rend. con base en Presupuestador 2024 (h/und) a jornada de 8 h (0,9 h/m²)",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-08.02",
+"cod": "08.02",
+"cap": "08 Muros y cerramientos",
+"nombre": "Muro en bloque #5 (e=0,12)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "bloque5",
+"cant": 15.5,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-MORT14",
+"cant": 0.015,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 9,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-08.03",
+"cod": "08.03",
+"cap": "08 Muros y cerramientos",
+"nombre": "Muro en ladrillo común (para pañetar)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "ladrillo",
+"cant": 55,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-MORT14",
+"cant": 0.025,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 7,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Rend. con base en Presupuestador 2024 (h/und) a jornada de 8 h (1,2 h/m²)",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-08.04",
+"cod": "08.04",
+"cap": "08 Muros y cerramientos",
+"nombre": "Muro en ladrillo tolete a la vista",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tolete",
+"cant": 55,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-MORT14",
+"cant": 0.025,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 5,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-08.05",
+"cod": "08.05",
+"cap": "08 Muros y cerramientos",
+"nombre": "Muro de fachada en ladrillo prensado (macizo o liviano)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "prensado",
+"cant": 45,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-MORT14",
+"cant": 0.02,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 5,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-08.06",
+"cod": "08.06",
+"cap": "08 Muros y cerramientos",
+"nombre": "Muro en ladrillo estructural portante",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "portante",
+"cant": 12.5,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-MORT14",
+"cant": 0.015,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "acero",
+"cant": 1.5,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-08.07",
+"cod": "08.07",
+"cap": "08 Muros y cerramientos",
+"nombre": "Muro en concreto vaciado",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.12,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-08.08",
+"cod": "08.08",
+"cap": "08 Muros y cerramientos",
+"nombre": "Dintel en concreto",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.015,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "acero",
+"cant": 2.5,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 0.4,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-08.09",
+"cod": "08.09",
+"cap": "08 Muros y cerramientos",
+"nombre": "Alfajía / antepecho",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-MORT14",
+"cant": 0.008,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "ceramica",
+"cant": 0.2,
+"desp": 10
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-08.10",
+"cod": "08.10",
+"cap": "08 Muros y cerramientos",
+"nombre": "Muro liviano exterior en superboard sobre perfilería",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "superboard",
+"cant": 0.36,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "paral",
+"cant": 1.3,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "tornillo_dw",
+"cant": 0.3,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "masilla",
+"cant": 0.02,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-08.11",
+"cod": "08.11",
+"cap": "08 Muros y cerramientos",
+"nombre": "Muro liviano interior en drywall a una cara",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "drywall",
+"cant": 0.36,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "paral",
+"cant": 1.3,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "tornillo_dw",
+"cant": 0.2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "masilla",
+"cant": 0.02,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "cinta_papel",
+"cant": 0.02,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 14,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-08.12",
+"cod": "08.12",
+"cap": "08 Muros y cerramientos",
+"nombre": "Muro liviano interior en drywall a dos caras",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "drywall",
+"cant": 0.72,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "paral",
+"cant": 1.3,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "tornillo_dw",
+"cant": 0.35,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "masilla",
+"cant": 0.04,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "cinta_papel",
+"cant": 0.04,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-08.13",
+"cod": "08.13",
+"cap": "08 Muros y cerramientos",
+"nombre": "Revestimiento exterior en madera (tablilla / machimbre)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "machi_pino",
+"cant": 1,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "puntilla",
+"cant": 0.1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 12,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-08.14",
+"cod": "08.14",
+"cap": "08 Muros y cerramientos",
+"nombre": "Revestimiento exterior en sapán",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "sapan",
+"cant": 1,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "tornillo_madera",
+"cant": 0.25,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 9,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-08.15",
+"cod": "08.15",
+"cap": "08 Muros y cerramientos",
+"nombre": "Revestimiento exterior en teca",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "teca_rev",
+"cant": 1,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "tornillo_madera",
+"cant": 0.25,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 9,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-08.16",
+"cod": "08.16",
+"cap": "08 Muros y cerramientos",
+"nombre": "Revestimiento interior en machimbre de pino",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "machi_pino",
+"cant": 1,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "puntilla",
+"cant": 0.1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 14,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-08.17",
+"cod": "08.17",
+"cap": "08 Muros y cerramientos",
+"nombre": "Aislamiento en frescasa en muros",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "frescasa",
+"cant": 0.056179775280898875,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A1",
+"rend": 40,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-08.18",
+"cod": "08.18",
+"cap": "08 Muros y cerramientos",
+"nombre": "Aislamiento térmico bajo piso (placa o entrepiso de cabaña)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "aislante_piso",
+"cant": 1,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A1",
+"rend": 40,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-08.19",
+"cod": "08.19",
+"cap": "08 Muros y cerramientos",
+"nombre": "Barrera de humedad / membrana respirable en muros",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "barrera",
+"cant": 1.1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A1",
+"rend": 60,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-09.01",
+"cod": "09.01",
+"cap": "09 Cubiertas",
+"nombre": "Correa metálica en perfil C",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "correa_c",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "soldadura_e",
+"cant": 0.02,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "anticorrosivo",
+"cant": 0.01,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 40,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-09.02",
+"cod": "09.02",
+"cap": "09 Cubiertas",
+"nombre": "Teja metálica trapezoidal / ondulada",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "teja_metal",
+"cant": 1.1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "gancho_teja",
+"cant": 4,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 35,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-09.03",
+"cod": "09.03",
+"cap": "09 Cubiertas",
+"nombre": "Teja de fibrocemento",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "teja_fibro",
+"cant": 0.4329004329004329,
+"desp": 8
+},
+{
+"tipo": "mat",
+"ins": "gancho_teja",
+"cant": 3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Teja #10 área útil ≈ 2,31 m²",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-09.04",
+"cod": "09.04",
+"cap": "09 Cubiertas",
+"nombre": "Teja termoacústica",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "teja_termo",
+"cant": 1.05,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "gancho_teja",
+"cant": 4,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 35,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-09.05",
+"cod": "09.05",
+"cap": "09 Cubiertas",
+"nombre": "Teja en UPVC",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "teja_upvc",
+"cant": 0.6451612903225806,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "gancho_teja",
+"cant": 4,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-09.06",
+"cod": "09.06",
+"cap": "09 Cubiertas",
+"nombre": "Teja de barro sobre estructura de madera",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "teja_barro",
+"cant": 16,
+"desp": 8
+},
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 3,
+"desp": 10
+},
+{
+"tipo": "bas",
+"apu": "B-MORT14",
+"cant": 0.01,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-09.07",
+"cod": "09.07",
+"cap": "09 Cubiertas",
+"nombre": "Cubierta plana: placa o tablero con manto impermeable",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "fibro20",
+"cant": 0.36,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "manto",
+"cant": 0.11,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "imprimante",
+"cant": 0.08,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 15,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-09.08",
+"cod": "09.08",
+"cap": "09 Cubiertas",
+"nombre": "Aislamiento en frescasa en cubierta",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "frescasa",
+"cant": 0.056179775280898875,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A1",
+"rend": 40,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-09.09",
+"cod": "09.09",
+"cap": "09 Cubiertas",
+"nombre": "Caballete",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "caballete",
+"cant": 1.1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "gancho_teja",
+"cant": 3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-09.10",
+"cod": "09.10",
+"cap": "09 Cubiertas",
+"nombre": "Flanche / remate perimetral",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "flanche",
+"cant": 0.4098360655737705,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "gancho_teja",
+"cant": 3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 25,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-09.11",
+"cod": "09.11",
+"cap": "09 Cubiertas",
+"nombre": "Canal en lámina galvanizada",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "canal",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "gancho_teja",
+"cant": 3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 20,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-09.12",
+"cod": "09.12",
+"cap": "09 Cubiertas",
+"nombre": "Bajante de aguas lluvias",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "bajante",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "accesorio_san",
+"cant": 0.3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 25,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-09.13",
+"cod": "09.13",
+"cap": "09 Cubiertas",
+"nombre": "Marquesina en vidrio y madera",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "vidrio_lam",
+"cant": 1.05,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 2.5,
+"desp": 10
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 150000,
+"nota": "Instalación por m²"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-09.14",
+"cod": "09.14",
+"cap": "09 Cubiertas",
+"nombre": "Marquesina / cubierta de parqueadero",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "teja_upvc",
+"cant": 0.6451612903225806,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 3,
+"desp": 10
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 60000,
+"nota": "Estructura e instalación por m²"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-09.15",
+"cod": "09.15",
+"cap": "09 Cubiertas",
+"nombre": "Pérgola en madera",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 4,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "tornillo_madera",
+"cant": 0.3,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "aceite_teca",
+"cant": 0.05,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 4,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-10.01",
+"cod": "10.01",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Pañete interior 1:4 e=1,5 cm",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-MORT14",
+"cant": 0.018,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 12,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-10.02",
+"cod": "10.02",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Pañete exterior impermeabilizado 1:3",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-MORT13",
+"cant": 0.02,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-10.03",
+"cod": "10.03",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Estuco plástico sobre pañete",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "estuco",
+"cant": 0.03333333333333333,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "lija",
+"cant": 0.2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 20,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-10.04",
+"cod": "10.04",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Tratamiento de juntas y estuco sobre drywall / superboard",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "masilla",
+"cant": 0.03,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "cinta_papel",
+"cant": 0.03,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "lija",
+"cant": 0.2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 20,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-10.05",
+"cod": "10.05",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Pintura vinilo tipo 1 interior (2 manos)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "vinilo1",
+"cant": 0.045454545454545456,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "lija",
+"cant": 0.1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 35,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Rend. pintura ≈ 22 m²/gal a 2 manos",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-10.06",
+"cod": "10.06",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Pintura vinilo tipo 2 en cielos",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "vinilo2",
+"cant": 0.05,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-10.07",
+"cod": "10.07",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Pintura exterior tipo Koraza",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "koraza",
+"cant": 0.07142857142857142,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 25,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "Koraza 13–15 m²/gal a dos manos",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-10.08",
+"cod": "10.08",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Pintura para zonas húmedas (baños, techos)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "antihongos",
+"cant": 0.05,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-10.09",
+"cod": "10.09",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Limpieza y sellante de muros en ladrillo",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "sellante_lad",
+"cant": 0.08333333333333333,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 35,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-10.10",
+"cod": "10.10",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Acabado de madera: sellador nitro / barniz",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "sellador_nitro",
+"cant": 0.05,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "laca",
+"cant": 0.05555555555555555,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "thinner",
+"cant": 0.05,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "lija",
+"cant": 0.4,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 12,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-10.11",
+"cod": "10.11",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Acabado de madera interior: aceite de teca",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "aceite_teca",
+"cant": 0.04,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "lija",
+"cant": 0.2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-10.12",
+"cod": "10.12",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Acabado de madera exterior: protector con filtro UV",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "protector_uv",
+"cant": 0.06666666666666667,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "lija",
+"cant": 0.2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 25,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-10.13",
+"cod": "10.13",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Acabado de madera exterior: aceite de teca",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "aceite_teca",
+"cant": 0.05,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "lija",
+"cant": 0.2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 25,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-10.14",
+"cod": "10.14",
+"cap": "10 Pañetes, estucos y pinturas",
+"nombre": "Acabado de madera exterior: quemado shou sugi ban",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "gas_soplete",
+"cant": 0.05,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "aceite_teca",
+"cant": 0.05,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "C1",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-11.01",
+"cod": "11.01",
+"cap": "11 Pisos y guardaescobas",
+"nombre": "Afinado de piso en mortero 1:4 e=4 cm",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-MORT14",
+"cant": 0.04,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 18,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-11.02",
+"cod": "11.02",
+"cap": "11 Pisos y guardaescobas",
+"nombre": "Piso en concreto pulido / endurecido",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.08,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "endurecedor",
+"cant": 3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O3A",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-11.03",
+"cod": "11.03",
+"cap": "11 Pisos y guardaescobas",
+"nombre": "Piso en cerámica o porcelanato (suministro e instalación)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "ceramica",
+"cant": 1,
+"desp": 8
+},
+{
+"tipo": "mat",
+"ins": "pegante_porc",
+"cant": 0.2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "boquilla",
+"cant": 0.15,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-11.04",
+"cod": "11.04",
+"cap": "11 Pisos y guardaescobas",
+"nombre": "Piso laminado",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "laminado",
+"cant": 1,
+"desp": 7
+},
+{
+"tipo": "mat",
+"ins": "espuma",
+"cant": 1.05,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-11.05",
+"cod": "11.05",
+"cap": "11 Pisos y guardaescobas",
+"nombre": "Piso en WPC",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "wpc_piso",
+"cant": 1,
+"desp": 7
+},
+{
+"tipo": "mat",
+"ins": "espuma",
+"cant": 1.05,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-11.06",
+"cod": "11.06",
+"cap": "11 Pisos y guardaescobas",
+"nombre": "Piso en vinilo (click o rollo)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "vinilo_piso",
+"cant": 1,
+"desp": 7
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-11.07",
+"cod": "11.07",
+"cap": "11 Pisos y guardaescobas",
+"nombre": "Piso en madera maciza machihembrada",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "machi_teca_piso",
+"cant": 1,
+"desp": 8
+},
+{
+"tipo": "mat",
+"ins": "tornillo_madera",
+"cant": 0.2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 2.5,
+"desp": 10
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 12,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-11.08",
+"cod": "11.08",
+"cap": "11 Pisos y guardaescobas",
+"nombre": "Guardaescoba en madera o cerámica",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "guardaescoba",
+"cant": 1,
+"desp": 8
+},
+{
+"tipo": "mat",
+"ins": "puntilla",
+"cant": 0.02,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 40,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-12.01",
+"cod": "12.01",
+"cap": "12 Enchapes",
+"nombre": "Enchape de muros de baño (suministro e instalación)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "ceramica_pared",
+"cant": 1,
+"desp": 8
+},
+{
+"tipo": "mat",
+"ins": "pegante",
+"cant": 0.2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "boquilla",
+"cant": 0.15,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-12.02",
+"cod": "12.02",
+"cap": "12 Enchapes",
+"nombre": "Salpicadero de cocina",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "ceramica_pared",
+"cant": 1,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "pegante",
+"cant": 0.2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "boquilla",
+"cant": 0.15,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 6,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-12.03",
+"cod": "12.03",
+"cap": "12 Enchapes",
+"nombre": "Enchape sobre superboard en zona húmeda (con impermeabilización)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "ceramica_pared",
+"cant": 1,
+"desp": 8
+},
+{
+"tipo": "mat",
+"ins": "pegante_porc",
+"cant": 0.2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "boquilla",
+"cant": 0.15,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "impermeab_flex",
+"cant": 0.1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 7,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-13.01",
+"cod": "13.01",
+"cap": "13 Cielos rasos",
+"nombre": "Cielo raso en drywall",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "drywall",
+"cant": 0.36,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "omega",
+"cant": 1.2,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "vigueta_dw",
+"cant": 0.5,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "angulo_dw",
+"cant": 0.3,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "tornillo_dw",
+"cant": 0.25,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "masilla",
+"cant": 0.03,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "cinta_papel",
+"cant": 0.03,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 12,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-13.02",
+"cod": "13.02",
+"cap": "13 Cielos rasos",
+"nombre": "Cielo raso en superboard en zonas húmedas",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "fibro8",
+"cant": 0.36,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "omega",
+"cant": 1.2,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "vigueta_dw",
+"cant": 0.5,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "tornillo_dw",
+"cant": 0.3,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "masilla",
+"cant": 0.03,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-13.03",
+"cod": "13.03",
+"cap": "13 Cielos rasos",
+"nombre": "Cielo raso en PVC",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "pvc_cielo",
+"cant": 1,
+"desp": 8
+},
+{
+"tipo": "mat",
+"ins": "omega",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "angulo_dw",
+"cant": 0.3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 20,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-13.04",
+"cod": "13.04",
+"cap": "13 Cielos rasos",
+"nombre": "Cielo raso metálico",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "cielo_metal",
+"cant": 1,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 15,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-13.05",
+"cod": "13.05",
+"cap": "13 Cielos rasos",
+"nombre": "Cielo raso en machimbre de pino",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "machi_pino",
+"cant": 1,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 2,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "puntilla",
+"cant": 0.1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-13.06",
+"cod": "13.06",
+"cap": "13 Cielos rasos",
+"nombre": "Cielo exterior / alero (superboard o madera)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "fibro8",
+"cant": 0.36,
+"desp": 8
+},
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 2,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "tornillo_dw",
+"cant": 0.3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-14.01",
+"cod": "14.01",
+"cap": "14 Carpintería en madera y mobiliario",
+"nombre": "Puerta principal en madera maciza (con marco y herrajes)",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 2800000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Para muebles a medida usa el modo rápido con despiece",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-14.02",
+"cod": "14.02",
+"cap": "14 Carpintería en madera y mobiliario",
+"nombre": "Puerta en metal (con marco y herrajes)",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 1400000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Para muebles a medida usa el modo rápido con despiece",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-14.03",
+"cod": "14.03",
+"cap": "14 Carpintería en madera y mobiliario",
+"nombre": "Puerta interior entamborada (melamina o madera)",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 750000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Para muebles a medida usa el modo rápido con despiece",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-14.04",
+"cod": "14.04",
+"cap": "14 Carpintería en madera y mobiliario",
+"nombre": "Puerta corrediza tipo granero (con riel y herrajes)",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 1600000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Para muebles a medida usa el modo rápido con despiece",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-14.05",
+"cod": "14.05",
+"cap": "14 Carpintería en madera y mobiliario",
+"nombre": "Closet en melamina",
+"und": "m",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 900000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Para muebles a medida usa el modo rápido con despiece",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-14.06",
+"cod": "14.06",
+"cap": "14 Carpintería en madera y mobiliario",
+"nombre": "Mueble inferior de cocina",
+"und": "m",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 1100000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Para muebles a medida usa el modo rápido con despiece",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-14.07",
+"cod": "14.07",
+"cap": "14 Carpintería en madera y mobiliario",
+"nombre": "Mueble superior de cocina",
+"und": "m",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 800000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Para muebles a medida usa el modo rápido con despiece",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-14.08",
+"cod": "14.08",
+"cap": "14 Carpintería en madera y mobiliario",
+"nombre": "Mueble de lavamanos",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 700000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Para muebles a medida usa el modo rápido con despiece",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-14.09",
+"cod": "14.09",
+"cap": "14 Carpintería en madera y mobiliario",
+"nombre": "Barra / mesón en madera maciza",
+"und": "m",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 600000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Para muebles a medida usa el modo rápido con despiece",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-14.10",
+"cod": "14.10",
+"cap": "14 Carpintería en madera y mobiliario",
+"nombre": "Baranda en madera",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 4,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "tornillo_madera",
+"cant": 0.3,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "aceite_teca",
+"cant": 0.05,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 4,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-14.11",
+"cod": "14.11",
+"cap": "14 Carpintería en madera y mobiliario",
+"nombre": "Escalera en madera",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 3500000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Para muebles a medida usa el modo rápido con despiece",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-15.01",
+"cod": "15.01",
+"cap": "15 Ventanería, puertas de vidrio y angeo",
+"nombre": "Ventana en aluminio y vidrio laminado",
+"und": "m²",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 380000,
+"nota": "Suministro e instalación por m²"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Ventana de línea Homecenter ≈ $257.000–300.000/m² con vidrio 4 mm; laminado a medida más caro",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-15.02",
+"cod": "15.02",
+"cap": "15 Ventanería, puertas de vidrio y angeo",
+"nombre": "Puerta corrediza en aluminio y vidrio",
+"und": "m²",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 450000,
+"nota": "Suministro e instalación por m²"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-15.03",
+"cod": "15.03",
+"cap": "15 Ventanería, puertas de vidrio y angeo",
+"nombre": "Ventanal / vidrio fijo piso a techo",
+"und": "m²",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 420000,
+"nota": "Suministro e instalación por m²"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-15.04",
+"cod": "15.04",
+"cap": "15 Ventanería, puertas de vidrio y angeo",
+"nombre": "División de ducha en vidrio templado",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 1300000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-15.05",
+"cod": "15.05",
+"cap": "15 Ventanería, puertas de vidrio y angeo",
+"nombre": "Ventana en madera y vidrio",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "vidrio_lam",
+"cant": 1.05,
+"desp": 0
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 350000,
+"nota": "Marco y hoja en madera, instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-15.06",
+"cod": "15.06",
+"cap": "15 Ventanería, puertas de vidrio y angeo",
+"nombre": "Pisavidrio en madera (fabricación e instalación)",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 1,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "puntilla",
+"cant": 0.02,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "C1",
+"rend": 25,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Cabaña"
+},
+{
+"id": "A-15.07",
+"cod": "15.07",
+"cap": "15 Ventanería, puertas de vidrio y angeo",
+"nombre": "Angeo en ventana o puerta",
+"und": "m²",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 60000,
+"nota": "Suministro e instalación por m²"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-16.01",
+"cod": "16.01",
+"cap": "16 Carpintería metálica",
+"nombre": "Portón metálico",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 2800000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-16.02",
+"cod": "16.02",
+"cap": "16 Carpintería metálica",
+"nombre": "Reja / baranda metálica",
+"und": "m",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 280000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-16.03",
+"cod": "16.03",
+"cap": "16 Carpintería metálica",
+"nombre": "Jaula para cilindro de gas",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 650000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-16.04",
+"cod": "16.04",
+"cap": "16 Carpintería metálica",
+"nombre": "Estructura soporte para calentador solar o tanque",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 600000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-17.01",
+"cod": "17.01",
+"cap": "17 Mesones, aparatos y griferías",
+"nombre": "Mesón de cocina en granito o cuarzo",
+"und": "m",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 650000,
+"nota": "Suministro e instalación por m"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-17.02",
+"cod": "17.02",
+"cap": "17 Mesones, aparatos y griferías",
+"nombre": "Mesón de lavamanos",
+"und": "m",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 450000,
+"nota": "Suministro e instalación por m"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-17.03",
+"cod": "17.03",
+"cap": "17 Mesones, aparatos y griferías",
+"nombre": "Sanitario (suministro e instalación)",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "sanitario",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "acople",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 4,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-17.04",
+"cod": "17.04",
+"cap": "17 Mesones, aparatos y griferías",
+"nombre": "Lavamanos con grifería y desagüe",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "lavamanos",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "grif_lvm",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "desague",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "acople",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 4,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-17.05",
+"cod": "17.05",
+"cap": "17 Mesones, aparatos y griferías",
+"nombre": "Ducha con grifería",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "grif_ducha",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "desague",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 3,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-17.06",
+"cod": "17.06",
+"cap": "17 Mesones, aparatos y griferías",
+"nombre": "Lavaplatos con grifería",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "lavaplatos",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "grif_cocina",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "desague",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "acople",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 4,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-17.07",
+"cod": "17.07",
+"cap": "17 Mesones, aparatos y griferías",
+"nombre": "Lavadero",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "lavadero",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "desague",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 3,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Vivienda"
+},
+{
+"id": "A-17.08",
+"cod": "17.08",
+"cap": "17 Mesones, aparatos y griferías",
+"nombre": "Juego de incrustaciones de baño",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "incrustaciones",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 6,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-17.09",
+"cod": "17.09",
+"cap": "17 Mesones, aparatos y griferías",
+"nombre": "Espejo de baño",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "espejo",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-17.10",
+"cod": "17.10",
+"cap": "17 Mesones, aparatos y griferías",
+"nombre": "Llave de jardín",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "llave_jardin",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "accesorio_pvc",
+"cant": 2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-17.11",
+"cod": "17.11",
+"cap": "17 Mesones, aparatos y griferías",
+"nombre": "Calentador de agua (gas o eléctrico)",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "calentador",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "acople",
+"cant": 2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 2,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-17.12",
+"cod": "17.12",
+"cap": "17 Mesones, aparatos y griferías",
+"nombre": "Calentador solar 150 L instalado",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 4500000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-18.01",
+"cod": "18.01",
+"cap": "18 Red hidrosanitaria",
+"nombre": "Acometida de agua desde tanque o contador",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tubo_presion_1_2",
+"cant": 0.16666666666666666,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "accesorio_pvc",
+"cant": 0.3,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "soldadura_pvc",
+"cant": 0.02,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 30,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-18.02",
+"cod": "18.02",
+"cap": "18 Red hidrosanitaria",
+"nombre": "Punto hidráulico agua fría",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tubo_presion_1_2",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "accesorio_pvc",
+"cant": 4,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "soldadura_pvc",
+"cant": 0.1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "limpiador_pvc",
+"cant": 0.1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 5,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-18.03",
+"cod": "18.03",
+"cap": "18 Red hidrosanitaria",
+"nombre": "Punto hidráulico agua caliente",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tubo_cpvc",
+"cant": 6,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "accesorio_pvc",
+"cant": 4,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "soldadura_pvc",
+"cant": 0.1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 5,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-18.04",
+"cod": "18.04",
+"cap": "18 Red hidrosanitaria",
+"nombre": "Red de distribución agua fría PVC (tubería)",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tubo_presion_1_2",
+"cant": 0.16666666666666666,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "accesorio_pvc",
+"cant": 0.4,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "soldadura_pvc",
+"cant": 0.02,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 40,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-18.05",
+"cod": "18.05",
+"cap": "18 Red hidrosanitaria",
+"nombre": "Punto sanitario",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tubo_san2",
+"cant": 2,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "accesorio_san",
+"cant": 2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "soldadura_pvc",
+"cant": 0.2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "limpiador_pvc",
+"cant": 0.2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 5,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-18.06",
+"cod": "18.06",
+"cap": "18 Red hidrosanitaria",
+"nombre": "Tubería sanitaria PVC 2\"–4\"",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tubo_san4",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "accesorio_san",
+"cant": 0.25,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "soldadura_pvc",
+"cant": 0.05,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 20,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-18.07",
+"cod": "18.07",
+"cap": "18 Red hidrosanitaria",
+"nombre": "Caja de inspección",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "ladrillo",
+"cant": 120,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-MORT14",
+"cant": 0.08,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.06,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 1,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-18.08",
+"cod": "18.08",
+"cap": "18 Red hidrosanitaria",
+"nombre": "Red de aguas lluvias y descole",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tubo_san3",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "accesorio_san",
+"cant": 0.2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "soldadura_pvc",
+"cant": 0.04,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 20,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-18.09",
+"cod": "18.09",
+"cap": "18 Red hidrosanitaria",
+"nombre": "Tanque de reserva plástico con base e instalación",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tanque_1000",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "registro",
+"cant": 2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "accesorio_pvc",
+"cant": 6,
+"desp": 0
+},
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.15,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 1,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-18.10",
+"cod": "18.10",
+"cap": "18 Red hidrosanitaria",
+"nombre": "Equipo de bombeo / presión",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 1800000,
+"nota": "Suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-19.01",
+"cod": "19.01",
+"cap": "19 Saneamiento",
+"nombre": "Pozo séptico prefabricado instalado (incluye excavación)",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "septico",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "filtro_anaer",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "tubo_san4",
+"cant": 6,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "accesorio_san",
+"cant": 4,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "recebo",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "dias",
+"cuadrilla": "OA",
+"dias": 3,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Excavación manual incluida en los días",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-19.02",
+"cod": "19.02",
+"cap": "19 Saneamiento",
+"nombre": "Trampa de grasas",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "trampa",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "accesorio_san",
+"cant": 2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 2,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-19.03",
+"cod": "19.03",
+"cap": "19 Saneamiento",
+"nombre": "Campo de infiltración",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "gravilla",
+"cant": 0.4,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "tubo_perf",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "geotextil",
+"cant": 2.5,
+"desp": 10
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A2",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-19.04",
+"cod": "19.04",
+"cap": "19 Saneamiento",
+"nombre": "Biofiltro de aguas grises",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "gravilla",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "geotextil",
+"cant": 4,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "accesorio_san",
+"cant": 2,
+"desp": 0
+}
+],
+"mo": {
+"modo": "dias",
+"cuadrilla": "OA",
+"dias": 2,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-20.01",
+"cod": "20.01",
+"cap": "20 Red eléctrica, datos y energía",
+"nombre": "Acometida eléctrica",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "cable8",
+"cant": 3,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "conduit",
+"cant": 0.35,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 25,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-20.02",
+"cod": "20.02",
+"cap": "20 Red eléctrica, datos y energía",
+"nombre": "Tablero general con protecciones",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tablero",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "breaker",
+"cant": 4,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 2,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-20.03",
+"cod": "20.03",
+"cap": "20 Red eléctrica, datos y energía",
+"nombre": "Salida de iluminación",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "cable12",
+"cant": 8,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "conduit",
+"cant": 2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "caja_el",
+"cant": 2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "roseta",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "interruptor",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-20.04",
+"cod": "20.04",
+"cap": "20 Red eléctrica, datos y energía",
+"nombre": "Salida de tomacorriente",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "cable12",
+"cant": 9,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "conduit",
+"cant": 2,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "caja_el",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "toma",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-20.05",
+"cod": "20.05",
+"cap": "20 Red eléctrica, datos y energía",
+"nombre": "Salida especial (estufa, ducha, calentador)",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "cable8",
+"cant": 12,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "conduit",
+"cant": 3,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "caja_el",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "breaker",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 4,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-20.06",
+"cod": "20.06",
+"cap": "20 Red eléctrica, datos y energía",
+"nombre": "Salida de TV / datos",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "cable_tv",
+"cant": 15,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "conduit",
+"cant": 3,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "caja_el",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-20.07",
+"cod": "20.07",
+"cap": "20 Red eléctrica, datos y energía",
+"nombre": "Luminaria (suministro e instalación)",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "luminaria",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "O1",
+"rend": 12,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-20.08",
+"cod": "20.08",
+"cap": "20 Red eléctrica, datos y energía",
+"nombre": "Sistema de puesta a tierra",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "varilla_cu",
+"cant": 1,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "cable8",
+"cant": 3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 3,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-20.09",
+"cod": "20.09",
+"cap": "20 Red eléctrica, datos y energía",
+"nombre": "Sistema solar fotovoltaico con batería",
+"und": "glb",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 14000000,
+"nota": "Sistema completo suministro e instalación"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Ver proyecto sistema solar; ajustar por potencia",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-21.01",
+"cod": "21.01",
+"cap": "21 Red de gas",
+"nombre": "Red de gas propano (tubería y accesorios)",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "tubo_gas",
+"cant": 1,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "accesorio_pvc",
+"cant": 0.3,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 20,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-21.02",
+"cod": "21.02",
+"cap": "21 Red de gas",
+"nombre": "Instalación de cilindro, regulador y válvulas",
+"und": "und",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "regulador",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 4,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-22.01",
+"cod": "22.01",
+"cap": "22 Obras exteriores y paisajismo",
+"nombre": "Deck en teca sobre estructura (madera e instalación)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "deck_teca",
+"cant": 1,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "repisa_m",
+"cant": 3,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "tornillo_madera",
+"cant": 0.35,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "aceite_teca",
+"cant": 0.05,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "CA",
+"rend": 6,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Estructura con repisas; pilotes aparte (04.08)",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-22.02",
+"cod": "22.02",
+"cap": "22 Obras exteriores y paisajismo",
+"nombre": "Camino peatonal (gravilla, piedra o huellas)",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "gravilla",
+"cant": 0.08,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "geotextil",
+"cant": 1.05,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A2",
+"rend": 20,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-22.03",
+"cod": "22.03",
+"cap": "22 Obras exteriores y paisajismo",
+"nombre": "Parqueadero en recebo / gravilla compactada",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "recebo",
+"cant": 0.2,
+"desp": 30
+},
+{
+"tipo": "mat",
+"ins": "gravilla",
+"cant": 0.05,
+"desp": 5
+},
+{
+"tipo": "eq",
+"ins": "canguro",
+"cant": 0.016666666666666666
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A2",
+"rend": 40,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-22.04",
+"cod": "22.04",
+"cap": "22 Obras exteriores y paisajismo",
+"nombre": "Cuneta / manejo de aguas superficiales",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "bas",
+"apu": "B-CON3000M",
+"cant": 0.06,
+"desp": 5
+},
+{
+"tipo": "bas",
+"apu": "B-FORM",
+"cant": 0.6,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 8,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-22.05",
+"cod": "22.05",
+"cap": "22 Obras exteriores y paisajismo",
+"nombre": "Drenaje francés (zanja con grava y geotextil)",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "gravilla",
+"cant": 0.25,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "geotextil",
+"cant": 2.2,
+"desp": 10
+},
+{
+"tipo": "mat",
+"ins": "tubo_perf",
+"cant": 1,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A2",
+"rend": 10,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-22.06",
+"cod": "22.06",
+"cap": "22 Obras exteriores y paisajismo",
+"nombre": "Cerramiento de lote en postes y alambre o malla",
+"und": "m",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "eucalipto",
+"cant": 0.8,
+"desp": 5
+},
+{
+"tipo": "mat",
+"ins": "alambre_puas",
+"cant": 4,
+"desp": 5
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "OA",
+"rend": 40,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-22.07",
+"cod": "22.07",
+"cap": "22 Obras exteriores y paisajismo",
+"nombre": "Empradización",
+"und": "m²",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "grama",
+"cant": 1.05,
+"desp": 0
+},
+{
+"tipo": "mat",
+"ins": "tierra",
+"cant": 0.05,
+"desp": 0
+}
+],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A1",
+"rend": 40,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-22.08",
+"cod": "22.08",
+"cap": "22 Obras exteriores y paisajismo",
+"nombre": "Zona de fogata",
+"und": "und",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 1800000,
+"nota": "Fogata en foso con ladrillo"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-23.01",
+"cod": "23.01",
+"cap": "23 Varios y logística",
+"nombre": "Transporte de materiales",
+"und": "viaje",
+"basico": false,
+"comp": [
+{
+"tipo": "mat",
+"ins": "volqueta",
+"cant": 1,
+"desp": 0
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 0,
+"nota": "Solo transporte"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Viaje en volqueta; para camioneta usa el valor del pedido",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-23.02",
+"cod": "23.02",
+"cap": "23 Varios y logística",
+"nombre": "Movilización de trabajadores a la obra",
+"und": "glb",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "contratista",
+"valor": 500000,
+"nota": "Global por proyecto"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "Transporte del personal según distancia",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-23.03",
+"cod": "23.03",
+"cap": "23 Varios y logística",
+"nombre": "Alquiler de andamios y equipos",
+"und": "mes",
+"basico": false,
+"comp": [
+{
+"tipo": "eq",
+"ins": "andamio",
+"cant": 30
+}
+],
+"mo": {
+"modo": "contratista",
+"valor": 0,
+"nota": "Solo equipo"
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+},
+{
+"id": "A-23.04",
+"cod": "23.04",
+"cap": "23 Varios y logística",
+"nombre": "Aseo general y retiro final de escombros",
+"und": "m²",
+"basico": false,
+"comp": [],
+"mo": {
+"modo": "cuadrilla",
+"cuadrilla": "A2",
+"rend": 120,
+"nota": ""
+},
+"herr": 5,
+"est": true,
+"fuente": "",
+"notas": "",
+"origen": null,
+"aplica": "Ambas"
+}
+],
+"presupuestos": [],
+"config": {
+"herrPct": 5,
+"aiu": {
+"a": 10,
+"i": 5,
+"u": 10
+},
+"ivaPct": 19,
+"empresa": "Arqteka",
+"profesional": "Arq. Andrés Ríos",
+"redondeo": 1000
+}
+}
