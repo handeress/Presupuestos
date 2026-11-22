@@ -1,8 +1,9 @@
 // Guarda la app en el equipo para que abra sin señal.
-const CACHE = 'presupuestos-v3';
+const CACHE = 'presupuestos-v4';
 const ARCHIVOS = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './datos-base.json'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(ARCHIVOS))); self.skipWaiting(); });
-self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k))))); self.clients.claim(); });
+self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('presupuestos-v') && k !== CACHE).map(k => caches.delete(k))))); self.clients.claim(); });
+// Solo borra versiones viejas de esta app: las demás apps comparten handeress.github.io.
 // Primero lo guardado; si hay internet, actualiza para la próxima vez.
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
