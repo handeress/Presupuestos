@@ -21,3 +21,5 @@ Dirección (cuando GitHub Pages esté activo): https://handeress.github.io/Presu
 ## Fases siguientes
 2: versiones y opciones de presupuesto, adicionales, precio de ejecución, explosión de insumos hacia Gestión de materiales.
 3: importación Revit/IFC con "Código APU", rendimientos reales de la Bitácora y cronograma.
+
+- 23-nov-2026: atrás por niveles (subpágina → elemento → lista o inicio → cierra la app); botón Instalar en el celular.

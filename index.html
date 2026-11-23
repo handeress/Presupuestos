@@ -84,6 +84,8 @@ table.imp tr.cap td{font-weight:700;background:#eee}
 </head>
 <body>
 <header><button id="atras" aria-label="Atrás" hidden>←</button><h1 id="titulo">Presupuestos</h1><button id="btnMenu" aria-label="Más">⋯</button></header>
+<div id="instBar" hidden style="display:none;gap:10px;align-items:center;margin:8px 12px 0;padding:10px 12px;background:#fffdf8;border:1px solid #c2410c;border-radius:10px"><span style="flex:1">Instala Presupuestos en la pantalla del celular.</span><button class="btn" id="bInst" style="background:#c2410c">Instalar</button></div>
+<script>(function(){let ev=null;const bar=()=>document.getElementById("instBar");const ver=v=>{const b=bar();if(!b)return;b.hidden=!v;b.style.display=v?"flex":"none";};window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();ev=e;ver(true);});window.addEventListener("appinstalled",()=>{ev=null;ver(false);});document.addEventListener("click",async e=>{if(e.target&&e.target.id==="bInst"&&ev){ev.prompt();try{await ev.userChoice;}catch(_){}ev=null;ver(false);}});document.addEventListener("DOMContentLoaded",()=>ver(!!ev));})();</script>
 <main id="vista"></main>
 <nav>
  <a href="#presupuestos" data-n="presupuestos"><b>▤</b>Presupuestos</a>
@@ -145,12 +147,32 @@ function calcPres(p){
 
 /* ================= Navegación ================= */
 const esPC=()=>matchMedia('(min-width:900px)').matches;
-let RUTA=[];window.addEventListener('hashchange',render);
+let RUTA=[];
+const NAV_HOME='presupuestos',NAV_SECC=['biblioteca','insumos','mo','ajustes'],NAV_RENDER=()=>render();
+function nivelH(h){const r=h.split('/');if(r[0]==='p')return r.length>2?2:1;if(r[0]==='apu')return 2;return NAV_SECC.includes(r[0])?1:0;}
+function padreH(h){const r=h.split('/');if(r[0]==='p')return r.length>2?'p/'+r[1]:NAV_HOME;if(r[0]==='apu')return 'biblioteca';return NAV_HOME;}
+/* Atrás por niveles: subpágina → página inicial del elemento → lista/inicio → cierra la app.
+   Cada paso del historial guarda su nivel (n); al navegar se ajusta para que haya un paso por nivel. */
+let navCur=0,navPend=null,navUlt='';
+const hashA=()=>decodeURIComponent(location.hash.slice(1))||NAV_HOME;
+function navCadena(h){const c=[h];let s=0;while(nivelH(c[0])>0&&s++<9)c.unshift(padreH(c[0]));return c;}
+function navAsentar(){const st=history.state,h=hashA();
+  if(navPend){if(st&&st.n===navPend.n){history.replaceState({n:navPend.n},'','#'+navPend.h);navPend=null;navCur=st.n;return true;}return false;}
+  if(st&&typeof st.n==='number'){navCur=st.n;return true;}
+  if(st&&st.m)return false;
+  const c=navCadena(h),L=c.length-1;
+  if(L>=navCur+1){history.replaceState({n:navCur+1},'','#'+c[navCur+1]);for(let i=navCur+2;i<=L;i++)history.pushState({n:i},'','#'+c[i]);navCur=L;return true;}
+  navPend={n:L,h};history.go(L-navCur-1);return false;}
+function navIniciar(){const st=history.state;
+  if(st&&typeof st.n==='number'){navCur=st.n;return;}
+  const c=navCadena(hashA());history.replaceState({n:0},'','#'+c[0]);for(let i=1;i<c.length;i++)history.pushState({n:i},'','#'+c[i]);navCur=c.length-1;}
+window.addEventListener('popstate',()=>{const ok=navAsentar();if(!ok)return;const h=hashA();if(h===navUlt)return;NAV_RENDER();});
+
 function ir(h){if(location.hash==='#'+h)render();else location.hash=h}
-function setTitulo(t,atras){$('#titulo').textContent=t;$('#atras').hidden=!atras;$('#atras').onclick=()=>history.length>1?history.back():ir(atras)}
+function setTitulo(t,atras){$('#titulo').textContent=t;$('#atras').hidden=!atras;$('#atras').onclick=()=>navCur>0?history.back():ir(atras)}
 function fab(f){const b=$('#fab');b.hidden=!f;b.onclick=f||null}
 function render(){
-  RUTA=(location.hash.slice(1)||'presupuestos').split('/').map(decodeURIComponent);const r=RUTA[0];
+  navUlt=hashA();RUTA=(location.hash.slice(1)||'presupuestos').split('/').map(decodeURIComponent);const r=RUTA[0];
   $$('nav a').forEach(a=>a.classList.toggle('on',a.dataset.n===r||(r==='apu'&&a.dataset.n==='biblioteca')||(r==='p'&&a.dataset.n==='presupuestos')));
   fab(null);const v=$('#vista');v.innerHTML='';window.scrollTo(0,0);
   if(r==='presupuestos')vPresupuestos(v);else if(r==='p')vPresupuesto(v,RUTA[1],RUTA[2],RUTA[3]);
@@ -466,7 +488,7 @@ window.addEventListener('afterprint',()=>{$('#impresion').innerHTML=''});
 (async function(){
   try{D=await kvGet('datos')}catch(e){}
   if(!D){try{const b=await (await fetch('datos-base.json')).json();D={...b,base:b.generado,presupuestos:[]};await guardarYa()}catch(e){$('#vista').innerHTML='<div class="vacio">Abre la app una vez con internet para cargar la biblioteca.</div>';return}}
-  render();revisarBuzon(false);window.addEventListener('online',()=>revisarBuzon(false));
+  navIniciar();render();revisarBuzon(false);window.addEventListener('online',()=>revisarBuzon(false));
   if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
   try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist()}catch(e){}
 })();
